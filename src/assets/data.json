@@ -1,0 +1,600 @@
+[
+  {
+    "collaborator": {
+      "name": "Laetitia",
+      "surname": "",
+      "title": "SOFTWARE_ENGINEERING",
+      "seniority": "Débutant",
+      "isAvailable": true,
+      "startAvailability": "2024-01-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Conceptrice développeuse d'applications, intervenant sur l'analyse fonctionnelle, la conception, le développement et la mise en œuvre de solutions applicatives.",
+      "experiences": [
+        {
+          "name": "Refonte d'une application de géolocalisation avec changement d'architecture pour la CPAM du Finistère",
+          "description": "Conceptrice & développeuse FullStack - Stage de fin de formation CDA au sein de la CPAM de Brest. Analyse de l'existant et des besoins fonctionnels. Participation à la conception technique. Développement back-end (Symfony). Développement front-end (VueJS). Intégration d'un système d'authentification SSO. Travail en environnement professionnel et collaboratif. Environnement : PHP, Symfony, VueJS, SSO, Git."
+        },
+        {
+          "name": "Mon lopin de mer – Projet transverse",
+          "description": "Cheffe de projet & Game designer - Projet de médiation scientifique et éducatif mené sur 3 ans. Pilotage global d'un projet de médiation scientifique à destination d'un public scolaire. Démarche centrée utilisateur, basée sur l'itération (prototype → tests → adaptations). Coordination d'une trentaine d'acteurs (médiateurs, enseignants, scientifiques, partenaires). Organisation et animation de phases de tests utilisateurs (élèves). Adaptation continue du dispositif en fonction des retours terrain. Gestion des contraintes de planning et de ressources."
+        },
+        {
+          "name": "Application d'enchères entre particuliers",
+          "description": "Conceptrice & développeuse full stack. Projet applicatif réalisé dans le cadre de la formation CDA. Modélisation de la base de données. Développement back-end (Java Spring Boot). Implémentation de la logique métier. Gestion de la persistance des données (JDBC). Environnement : Java, Spring Boot, SQL Server, Git."
+        },
+        {
+          "name": "Application de démocratie participative",
+          "description": "Porteuse de Projet, Analyse & conception. Projet personnel encadré par mon référent pédagogique en parallèle de la formation CDA. Analyse des besoins utilisateurs. Formalisation des parcours et fonctionnalités. Conception fonctionnelle et wireframes. Modélisation UML et MCD. Outils : UML, draw.io, Balsamiq."
+        }
+      ],
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "PHP",
+        "Symfony",
+        "JavaScript",
+        "VueJS",
+        "Analyse fonctionnelle",
+        "UML",
+        "MCD",
+        "SQL",
+        "Agile",
+        "Git",
+        "Travail collaboratif"
+      ],
+      "document": {
+        "miniDC": "260112_Laetitia_MiniDC.pptx",
+        "image": "laetitia.png"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+    "collaborator": {
+      "name": "Olivier",
+      "surname": "",
+      "title": "MANAGEMENT_AND_DELIVERY",
+      "seniority": "Expérimenté",
+      "isAvailable": false,
+      "startAvailability": "2026-09-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Consultant en stratégie et transformation digitale, j'accompagne les organisations dans leurs projets en alliant analyse, rigueur, adaptabilité et un leadership orienté résultats.",
+      "experiences": [
+        {
+          "name": "Optimisation des coûts IT pour un acteur du luxe",
+          "description": "Audit des dépenses hardware IT pour le CFO (Périmètre monde: 90k users). Analyse des politiques d'équipements IT Workplace (poste de travail, smartphone, accessoires, écrans…) et de leur mise en œuvre à l'échelle mondiale (+70 pays). Création d'une grille d'évaluation pour un benchmark externe des politiques d'équipements IT sur 12 entreprises. Identification et priorisation des leviers d'optimisation financière, green IT et UX pour une présentation au COMEX (10M€ savings)."
+        },
+        {
+          "name": "Pilotage de migration IT pour un groupe bancaire international",
+          "description": "Au sein d'un programme carve-in, chef de projet sur le volet Digital Workplace (Périmètre monde: 80k users). Pilotage du plan de transition pour deux entités, synchronisation et reporting à la direction programme."
+        },
+        {
+          "name": "Gouvernance IT et organisation produit pour un groupe bancaire international",
+          "description": "Définition et mise en place d'une gouvernance et organisation produit pour un groupe bancaire international (Périmètre monde: 140k users). Réalisation d'un audit auprès des managers des différents services (change, cybersécurité, architecture…). Proposition et mise en place d'une gouvernance et organisation agile autour des produits M365 (Outlook, OneDrive, Teams, etc…). Construction des 'offres de service' des produits M365. Présentation des offres aux 20 entités du groupe et animation de la communauté. Coordination avec des experts techniques Workplace (téléphonie, réseau, cloud, architectes, cybersécurité…). Encadrement de 2 analystes."
+        },
+        {
+          "name": "Déploiement d'un poste de travail cloud pour un acteur de l'énergie",
+          "description": "Dans un contexte d'achat de nouvelles filiales, définition et construction d'un poste de travail managé par Intune/Azure AD pour faciliter leur intégration (Périmètre monde, cible: 70k users). Définition des uses cases, évaluation des technologies, construction de la roadmap et priorisation (PI planning, projet agile). Participation à la définition et à l'optimisation de l'architecture du produit. Coordination de plusieurs équipes internes et externes pour s'assurer que les objectifs soient remplis. Reporting des actions à la direction programme pour le COMEX."
+        },
+        {
+          "name": "Création de dashboards de performance IT pour un groupe bancaire international",
+          "description": "Production d'un dashboard de KPI sous Power BI afin suivre le déploiement et l'adoption des différents produits de M365 et du Workplace."
+        }
+      ],
+      "skills": [
+        "Stratégie et transformation digitale",
+        "Pilotage de projets",
+        "Digital Workplace"
+      ],
+      "document": {
+        "miniDC": "251211_Olivier_MiniDC.pptx",
+        "image": "homme1.jpg"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+    "collaborator": {
+      "name": "Baptiste",
+      "surname": "",
+      "title": "MANAGEMENT_AND_DELIVERY",
+      "seniority": "Débutant",
+      "isAvailable": false,
+      "startAvailability": "2026-06-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Avec plus de trois années d'expérience dans le pilotage de projets stratégiques, la mise en place d'actions opérationnelles et l'optimisation des revenus dans le secteur de l'hôtellerie, mon parcours m'a permis d'acquérir une solide expertise en analyse de données, en gestion de la performance, en gestion de projet et en accompagnement des équipes dans la définition et la mise en œuvre de plans d'action.",
+      "experiences": [
+        {
+          "name": "Revenue Management & Analyse des Performances - Oceania Hotels",
+          "description": "Stratégies de pricing dynamiques, gestion des inventaires et des canaux de distribution. Ajustement des prix selon la demande, la saisonnalité et les tendances du marché. Suivi des résultats, identification des axes d'amélioration. Création de tableaux de bord, suivi des KPI et reporting précis pour la prise de décision. Standardisation des méthodes d'évaluation des performances. Étude du marché, adaptation des stratégies tarifaires et commerciales. Intégration du CRM Backyou (paramétrage / migration de données)."
+        },
+        {
+          "name": "Stratégie Commerciale & Développement - Oceania Hotels",
+          "description": "Définition d'objectifs, élaboration et suivi des plans d'actions. Ciblage, planification et suivi des campagnes. Stratégies de croissance, gestion des partenariats. Développement et fidélisation des relations entreprises."
+        },
+        {
+          "name": "Commercialisation & Représentation - Oceania Hotels",
+          "description": "Accroissement de la visibilité et de la rentabilité. Promotion et développement des opportunités commerciales."
+        },
+        {
+          "name": "Gestion & Ouverture d'Établissements",
+          "description": "Suivi et optimisation des performances d'un portefeuille hôtelier. Réalisation du budget et prévisions des ventes. Ouverture d'hôtels: Conception, mise en place et lancement commercial."
+        }
+      ],
+      "skills": [
+        "Pack Office",
+        "Power BI",
+        "PMS Oracle",
+        "PMS Mews",
+        "RMC TravelClick",
+        "RMS SpotPilot",
+        "Sptéo",
+        "CRM Salesforce",
+        "Backyou"
+      ],
+      "document": {
+        "miniDC": "251218_Baptiste_MiniDC.pptx",
+        "image": "homme2.png"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+    "collaborator": {
+      "name": "Jason",
+      "surname": "",
+      "title": "SOFTWARE_ENGINEERING",
+      "seniority": "Senior",
+      "isAvailable": true,
+      "startAvailability": "2026-01-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Développeur fullstack confirmé, je tends à m'orienter vers un rôle d'architecte solutions au sein de projets clients en alliant analyse, rigueur et adaptabilité.",
+      "experiences": [
+        {
+          "name": "Développement fullstack pour Arkéa",
+          "description": "MCO et développement de nouveaux services pour un site bancaire. Développement de services backend pour les virements et prélèvements (Java 17 / 21). Développement des interfaces front associées (AngularJs / VueJs). Run de production des services existants. Déploiement des services sur la plateforme on premise du client (Openstack / Gitlab / Docker)."
+        },
+        {
+          "name": "Développement d'applications pour un client discount",
+          "description": "Réalisation d'une application de saisie des activités des équipes de production. Développement des écrans mobiles (Flutter BLoC). Développement des services backend (PHP Symphony). Gestion de la base de données associée (PostgreSQL). Encadrement des 2 développeurs front. Leading des décisions architecture avec les équipes clients étrangères (Roumanie / Moldavie)."
+        },
+        {
+          "name": "Refonte d'un service de collecte de documents pour Arkéa",
+          "description": "Dans un contexte d'intégration de nouveaux partenaires B2B ainsi que d'une modification de l'infrastructure groupe. Modification et implémentation de nouveaux services fullstack pour la collecte et le contrôle de documents (Java21 / AngularJs). Migration de la plateforme backend de Java17 vers Java21. Participation à la refonte de l'architecture du produit. Run de production des services existants."
+        },
+        {
+          "name": "Création d'une plateforme Cloud privée pour Arkéa",
+          "description": "Participation à l'architecture, au développement et au déploiement d'une plateforme de services Cloud on premise en mode IaaS. Participation aux décisions sur l'architecture de la plateforme Cloud. Création de scripts de déploiement Groovy pour la mise en place de pipelines pour des composants infrastructure sur étagère (Openstack). Participation au développement de plugins Jenkins pour l'orchestration des déploiements de composants. Mise en place de la registry privée des images Docker utilisées au travers de la plateforme. Support opérationnel aux utilisateurs finaux de la plateforme. Formation des utilisateurs finaux de la plateforme."
+        }
+      ],
+      "skills": [
+        "Développement fullstack",
+        "Architecture des systèmes d'informations",
+        "Ecosystèmes Cloud"
+      ],
+      "document": {
+        "miniDC": "251218_Jason_MiniDC.pptx",
+        "image": "homme1.jpg"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+    "collaborator": {
+      "name": "Kévin",
+      "surname": "",
+      "title": "SOFTWARE_ENGINEERING",
+      "seniority": "Senior",
+      "isAvailable": true,
+      "startAvailability": "2026-01-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Avec plus de 10 ans d'expérience dans les domaines bancaires, logistiques et industriels, j'interviens sur toutes les phases d'un projet : conception, architecture, développement et maintenance. J'évolue aussi bien sur les environnements back-end que front-end, en intégrant des pratiques modernes.",
+      "experiences": [
+        {
+          "name": "Développement de librairies et de microservices - ACCENTURE / CNAM",
+          "description": "Développement de librairies et de microservices, batchs et scripts pour la caisse nationale d'assurance maladie. Environnement: Java, springboot, maven, kafka, kubernetes, docker, postgresql, git."
+        },
+        {
+          "name": "Architecture et implémentation de middlewares - FREELANCE",
+          "description": "Architecture et implémentation de middlewares en microservices REST. Développements android (diagrammes de GANT, formulaires, optimisation d'images). Environnement: Java, springboot, android studio, HTML/CSS, mysql, docker."
+        },
+        {
+          "name": "Application web de gestion et simulation 2D/3D - CERVVAL / TECHNIPFMC",
+          "description": "Application web de gestion et simulation 2D/3D d'infrastructures sous-marines. Conception d'un modèle générique, gestion des imports/exports multi-formats. Environnement: Javascript, typescript, MySql."
+        },
+        {
+          "name": "Développement de composants ReactNative - ASI",
+          "description": "Développement de composants reactnative, modules natifs Android/IOS, mise en place de deeplinks, conception et développements répondant aux normes DSP2 et RGPD. Développement d'apis back-end connectés au SI bancaire (souscription, génération contrats, virements, partenaires externes), de solution de gestion de fonctionnalités ainsi que de leurs droits d'accès. Intégration documentaire (alfresco, geodis), gestion des droits et métadonnées. Réalisation d'applications métiers: saisie produits/tarifs (C10), extranet de courtage en vins. Environnement: Java, springboot, angularjs, react native, postgresql, mysql, maven."
+        }
+      ],
+      "skills": [
+        "Java",
+        "Javascript",
+        "SQL",
+        "Typescript",
+        "Html",
+        "SpringBoot",
+        "React Native",
+        "AngularJS",
+        "Bootstrap",
+        "PostgreSQL",
+        "MySQL",
+        "Git",
+        "Jenkins",
+        "Docker",
+        "Kubernetes"
+      ],
+      "document": {
+        "miniDC": "251218_Kevin_MiniDC.pptx",
+        "image": "homme2.png"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+  "collaborator": {
+    "name": "Raphaël",
+    "surname": "",
+    "title": "AGILITY_AND_COUNSEL",
+    "seniority": "Débutant",
+    "isAvailable": true,
+    "startAvailability": "2026-01-01",
+    "createdAt": "2024-01-01",
+    "updatedAt": "2024-01-01",
+    "highlight": "Récemment diplômé d'un master 2 en Data et Business Analyst, curieux, trilingue et orienté résultats, je transforme les données en leviers stratégiques de décision. Mon parcours scolaire et professionnel m'a permis d'acquérir une expertise en analyse de données, en gestion de la performance via les KPI, en gestion et en mise en œuvre de projets.",
+    "experiences": [
+      {
+        "name": "Benchmark et analyse du segment de marché des véhicules électriques OFF HIGHWAY chez FORSEE POWER",
+        "description": "Assistant Product manager et référent des datas concernant le marché électrique off Highway. Créer un Dashboard interactif sous Power BI afin de visualiser les concurrents, les dynamiques du marché et les opportunités de croissance. Réalisation d'un benchmark sur le marché OFF HIGHWAY. Collecter, nettoyer et structurer les données du marché des véhicules électriques OFF HIGHWAY pour garantir leur fiabilité. Prévision des dynamiques de marché grâce aux données collectées. Organisation de réunions destinées à présenter l'analyse du marché Off Highway et les offres concurrentielles aux Product Managers et Chefs de projets, dans le but de co-construire des stratégies de déploiement et d'entrée sur ce marché."
+      },
+      {
+        "name": "Développement et manipulation des données de l'équipe IMPFC chez Orange",
+        "description": "Référent Data de l'équipe IMPFC (Incident management et plateforme cloud) et pilotage du projet d'un agent IA permettant d'assister les IMPFC dans la résolution d'incident Cloud. Manipulation de données sur Google Cloud Platform (GCP) à l'aide de requêtes SQL pour la mise à jour et l'organisation des données. Développement d'interfaces web pour la visualisation des données. Définition d'objectifs, élaboration et suivi des plans d'actions. Mise en place de plusieurs projets afin automatiser diverses tâches répétitives pour augmenter l'efficacité des équipes IMPFC. Création de documentations pour la gestion des données. Élaboration et actualisation des indicateurs clés de performance (KPI) liés au domaine IMPFC pour développer un tableau de bord interactif avec Power BI ainsi qu'un diagramme de temps automatique de suivis d'incident."
+      },
+      {
+        "name": "Référent SAP domaine des achats, spécialisé dans gestion des données des fournisseurs Europe et Etats unis chez BioMerieux",
+        "description": "Coordinateur des équipes achats et des différents fournisseurs sur la gestion et la migration des données via SAP. Assurer la migration, le data cleansing et l'analyse des données pour optimiser la gestion des fournisseurs à l'échelle européenne (Utilisation Via Tableau/Excel et SAP). Contribuer à l'amélioration de la qualité des données en lien avec les projets de transformation digitale (SRM, analyse des dépenses). Supporter les interlocuteurs Achats, et les relais locaux (ex: USA) dans l'usage et l'ajustement de la data (pertinence, fiabilité, amélioration fiabilité champs associés). Gestion des fournisseurs et analyse des données via Tableau et Excel afin de créer des indicateurs clés et des rapports opérationnels, directement exploitables par les équipes achats pour piloter leurs performances."
+      }
+    ],
+    "skills": [
+      "Pack Office",
+      "Excel",
+      "Power BI",
+      "SAP",
+      "GCP",
+      "AGILE",
+      "Infrastructure IT et Cloud"
+    ],
+    "document": {
+      "miniDC": "251218_Raphael_MiniDC - Copie1.pptx",
+      "image": "homme1.jpg"
+    },
+    "office": {
+      "name": "Brest"
+    }
+   }
+  },
+  {
+    "collaborator": {
+      "name": "Amélie",
+      "surname": "",
+      "title": "MANAGEMENT_AND_DELIVERY",
+      "seniority": "Senior",
+      "isAvailable": true,
+      "startAvailability": "2026-01-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Cheffe de projets avec une solide expérience, j'interviens sur l'ensemble des étapes de la gestion de projets, de la définition des besoins au suivi de la mise en œuvre, en lien avec les équipes concernées.",
+      "experiences": [
+        {
+          "name": "Pilotage d'un projet réglementaire pour une société de distribution",
+          "description": "Cheffe de projets pour l'application de la réforme de Dématérialisation des Factures. Pilotage et coordination du projet en lien avec les équipes Métiers et les équipes techniques. Analyse des impacts / Spécifications des uses cases, des évolutions et mapping du flux électronique. Animation des comités projets et comités de pilotage / Suivi des risques, des délais, des coûts et des livrables. Gestion d'un appel d'offres pour sélectionner la plateforme agréée (PA) nécessaire pour l'envoi des flux."
+        },
+        {
+          "name": "Responsable d'une équipe projets pour une banque en ligne",
+          "description": "Manager d'une équipe projets - Pilotage les évolutions du Middle Office et du Centre de Relation Clients. Encadrement de 7 personnes. Coordination de projets, calcul de ROI, aide à la décision pour priorisation des projets. Accompagnement des Métiers dans les changements organisationnels et fonctionnels (ex: Migration de CRM, Intégration d'IA au Call Center, …). Gestion et pilotage de nombreux fournisseurs et partenaires. Mise en œuvre de solutions Open Banking."
+        },
+        {
+          "name": "Product Owner d'une équipe de 2 développeurs",
+          "description": "Création d'un portail développeur (sous AWS) pour donner accès aux partenaires à la documentation technique des API. Création de monitoring des flux / Suivi des coûts."
+        },
+        {
+          "name": "Pilotage de projets réglementaires pour une banque en ligne",
+          "description": "Cheffe de projets transverse en lien avec de nombreuses équipes et avec le Groupe. Pilotage des projets réglementaires DSP2 (Directive sur les services de paiement) et DDA (Directive sur la distribution des Assurances) en lien avec plusieurs directions. Elaboration de cahiers des charges, des plannings / Suivi des risques, des délais, des coûts. Pilotage des phases de recette et de mise en production."
+        },
+        {
+          "name": "Gestion de la relation client B2B bancaire",
+          "description": "Responsable d'un client bancaire – Gestion du système d'information, du site web et du Poste de Travail en marque blanche. Recueil et analyse des besoins avec le client / Rédaction de cahiers des charges. Coordination des équipes techniques pour les évolutions demandées / gestion des recettes. Gestion des coûts et des devis clients."
+        }
+      ],
+      "skills": [
+        "Pilotage de projets",
+        "Agile",
+        "Cycle en V",
+        "Travail en équipe",
+        "Rigueur et organisation",
+        "Qualité relationnelle"
+      ],
+      "document": {
+        "miniDC": "251219_Amelie_MiniDC.pptx",
+        "image": "femme.png"
+
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+    "collaborator": {
+      "name": "Axel",
+      "surname": "Quéméneur",
+      "title": "CYBERSECURITY",
+      "seniority": "Expérimenté",
+      "isAvailable": true,
+      "startAvailability": "2026-01-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Consultant dans l'administration des systèmes et réseaux, j'accompagne les entreprises en apportent mon lot de compétences et en alliant rigueur, adaptabilité et polyvalence pour mener à bien chaque projet.",
+      "experiences": [
+        {
+          "name": "Expertise de niveau 3 sur un Bastion informatique d'une OIV",
+          "description": "Maintenance et évolution d'une solution CyberArk. Montée de version applicatives sur la totalité des composants. Migration applicative sur Windows Server 2019. Mise en place d'une solution Machine To Machine basé sur du Docker. Construction, maintenance et évolution des conteneurs portant l'applicatif. Intégration d'application (Configuration d'APIKey, formatage de requêtes HTTPS, vérification d'identité par certificat SSL). Mise en place de supervision système et applicative (Dynatrace). Installation et montée de version de l'agent. Création de dashboard de supervision. Raccordement de l'infrastructure à un SIEM (NXLog). Gestion des habilitations et des droits des différents utilisateurs. Ouverture de flux sur Parefeu local et propriétaire (Palo Alto, Fortinet). Formation et mise en condition réelle d'une rupture de service pour l'équipe RUN. Rédaction documentaire (Fiche d'exploitation et d'installation). Fonctionnement sous méthode Agile (SCRUM: PI Planning, Sprint, Daily, …)."
+        },
+        {
+          "name": "Administration Système (Windows et Linux)",
+          "description": "Mise en place de tâche planifié (Task Scheduler, Crontab). Mise à jour de sécurité Windows et Linux couplé à un planning de reboot. Montée de version RHEL et patching de faille via Ansible. Modification de registre Windows (Paramètre RDP, Client CyberArk, Configuration de service, …). Gestion du stockage (Partitionnement, Migration de données applicatives). Séparation entre données systèmes et applicatives. Modification de configuration Rsyslog sur RHEL 8.10. Sécurisation de connexion RDP via un certificat SSL. Installation d'une ferme RDS (Connection Brocker, Session Host, License Server, …)."
+        },
+        {
+          "name": "Programmation",
+          "description": "Développement de script d'automatisation (Bash, Powershell, Python). Développement de script utilisant l'API CyberArk (POST, GET, PATCH, …). Configuration d'un Gitlab et rédaction d'un document de cadrage concernant son utilisation."
+        }
+      ],
+      "skills": [
+        "Bastion informatique",
+        "CyberArk",
+        "Conteneurisation",
+        "Docker",
+        "Environnement UNIX",
+        "RHEL",
+        "Environnement Windows",
+        "Server 2019",
+        "Agile"
+      ],
+      "document": {
+        "miniDC": "260106_Axel_MiniDC.pptx",
+        "image": "homme1.jpg"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+  {
+    "collaborator": {
+      "name": "Bertrand",
+      "surname": "Jegou",
+      "title": "MANAGEMENT_AND_DELIVERY",
+      "seniority": "Senior",
+      "isAvailable": true,
+      "startAvailability": "2026-01-01",
+      "createdAt": "2024-01-01",
+      "updatedAt": "2024-01-01",
+      "highlight": "Chef de projet IT de plus de 10 années d'expériences dans le pilotage de projets applicatifs, la gestion des délais, le cadrage fonctionnel, la coordination d'équipes et la mise en production d'applications web. Habitué à cadrer un besoin métier, structurer une roadmap, prioriser les tâche et sécuriser les livraisons dans un contexte agile.",
+      "experiences": [
+        {
+          "name": "Pilotage du développement d'une marketplace B2B freelance/industrie - cilaes.com",
+          "description": "Chef de projet IT (périmètre: 3000+ freelances, 100+ entreprises, 2023–2025). Gouvernance et cadrage: Définition des processus de gestion des comptes utilisateurs (entreprises et freelances), des outils de matching, et des espaces de communication sécurisés. Développement des fonctionnalités clés: Outil de dépôt d'offres de mission et de candidature, avec workflow de validation et notifications automatisées. Espace collaboratif pour la gestion des contrats (suivi des échéances, archivage). Intégration des APIs de paiement (Stripe) et d'IA (Mistral AI). Coordination transversale: Animation des ateliers de collecte de besoins avec les équipes métiers (commercial, juridique, support). Synchronisation des livrables entre les équipes techniques (dev, QA) et les parties prenantes externes (clients, partenaires). Suivi des performances: Mise en place de tableaux de bord pour suivre l'adoption de la plateforme, le taux de conversion (offres → contrats), et la satisfaction utilisateur (NPS). Reporting mensuel au COMEX sur les indicateurs clés."
+        },
+        {
+          "name": "Optimisation UX et intégrations techniques pour un site emploi - Jeveuxtravailler.com",
+          "description": "Chef de projet web (Périmètre: utilisateurs actifs, intégrations API, France). Définition des parcours utilisateurs: Maquettage (figma) et cadrage des fonctionnalités pour un site de rencontre de l'emploi. Pilotage des développements: Intégration des apis stripe et pôle emploi, gestion des anomalies et optimisation du taux de conversion. Coordination: Collaboration avec les équipes techniques pour livrer une expérience utilisateur fluide et performante."
+        },
+        {
+          "name": "Déploiement d'une marketplace de formation professionnelle - IANOS",
+          "description": "Chef de projet & entrepreneur (Périmètre: SI, coordination, recette, France). Planification et coordination: Roadmap produit alignée sur les besoins des centres de formation et des apprenants. Pilotage d'une équipe de 2 développeurs et d'un designer UX/UI. Déploiement et recette: Organisation des tests utilisateurs et recette fonctionnelle avant mise en production. Suivi post-livraison pour garantir la stabilité et l'évolutivité."
+        }
+      ],
+      "skills": [
+        "Pilotage de projets digitaux",
+        "Agile",
+        "Cycle en V",
+        "Coordination d'équipes",
+        "Planification",
+        "Suivi des indicateurs de performance",
+        "Amélioration continue"
+      ],
+      "document": {
+        "miniDC": "260123_Bertrand_MiniDC.pptx",
+        "image": "homme2.png"
+      },
+      "office": {
+        "name": "Brest"
+      }
+    }
+  },
+    {
+    "collaborator": {
+        "name": "Ludovic",
+        "surname": "",
+        "title": "MANAGEMENT_AND_DELIVERY",
+        "seniority": "Senior",
+        "isAvailable": true,
+        "startAvailability": "2026-01-01",
+        "createdAt": "2024-01-01",
+        "updatedAt": "2024-01-01",
+        "highlight": "Une expérience riche, construite au travers de différents postes, dans plusieurs domaines d'expertises. Une facilité d'adaptation à des contextes bien différents, grâce à une certaine aisance relationnelle, un esprit de synthèse et un bon sens de l'organisation. Chacun des projets auxqu j'ai activement participé, m'a apporté une vision différente des enjeux d'un projet informatique. J'ai pu apporter toute mon expérience, mon professionnalisme, mon dynamisme et ma bonne humeur au bon déroulement de ces projets.",
+        "experiences": [
+            {
+                "name": "Pilotage d'un projet de build puis de refonte pour SG Assurances",
+                "description": "Chef de projets et Scrum Master pour la mise en place de l'Espace Assurances pour les conseillers bancaires (interface unique). Pilotage stratégique (CODIR/COMEX) et coordination du projet en lien avec les équipes Métiers et les équipes Techniques. Encadrement d'une équipe jusqu'à 12 personnes. Animation des comités projets et comités de pilotage / Suivi du planning, des risques, des délais, des coûts et des livrables. Prise en charge de projets satellites annexes liés à l'EAC, pilotage de projets transverses dans un environnement complexe."
+            },
+            {
+                "name": "Pilotage de projets transverses pour Suez-Lyonnaise des eaux",
+                "description": "Chef de projets transverses et responsable support utilisateur (SAP HR / BW / Workflow ESS). Pilotage montée de version SAP HR, intégration de nouvelles sociétés semi-publiques et privées, mise en place d'une nouvelle grille tarifaire (GPEC). Coordination des différentes équipes (MOE, MOA, TMA). Elaboration des plannings / Suivi des risques, des délais, des coûts, animation des comités. Rédaction des spécifications fonctionnelles suite à l'organisation des ateliers de formalisation des besoins. Supervision de la phase de recette, de la mise en production et participation à la formation des utilisateurs et administrateurs."
+            },
+            {
+                "name": "Pilotage du déploiement HR ACCESS pour des organisations publiques",
+                "description": "Responsable supervision de la mise en place d'HR ACCESS. Recueil et analyse des besoins avec le client / Rédaction de cahiers des charges, conception, paramétrage, validation, gestion des recettes. Réalisation des supports et animation de formation utilisateurs (plus de 120 personnes). Rédaction d'appel d'offre, participation soutenance et choix du prestataire."
+            },
+            {
+                "name": "Pilotage d'un projet de dématérialisation et de projets transverses pour AG2R La Mondiale",
+                "description": "Chef de projet, puis directeur de projet dématérialisation et industrialisation flux entrants groupe (courriers, mails, téléphonies…). Pilotage stratégique du projet : budget, planning, suivi des risques, des délais, des coûts (KPI, reporting…). Coordination multi-métier : logistique (courrier), DSI, MOA, Métier, Gestion, prestataires. Coordination des équipes et animation des comités (COPIL / CODIR / COMEX). Pilotage de projets transverses (convergence du SI retraite, transfert de la chaîne de numérisation)."
+            },
+            {
+                "name": "Responsable du développement et la mise en place d'un logiciel de gestion de flotte automobile pour My Leasing – Drive in",
+                "description": "Diriger et manager une équipe projets – Product Owner et directeur de projet. Encadrement et coordination des entités (clients, gestionnaires, prestataires et équipe interne), suivi du planning, des équipes et du budget. Pilotage du projet de bout en bout, rédaction cahier des charges, choix des prestataires, validation des livrables. Accompagnement des clients dans les changements organisationnels et fonctionnels (mise à disposition, formation et responsable du support…). Gestion et pilotage de nombreux fournisseurs privés et publiques."
+            }
+        ],
+        "skills": [
+            "Pilotage programmes & projets complexes (Agile / SAFE, Cycle en V)",
+            "Management d'équipes pluridisciplinaires (20+ pers.)",
+            "Qualité relationnelle, rigueur et organisation",
+            "Gestion budgétaire & KPI",
+            "GED, SIRH, dématérialisation, modernisation SI",
+            "Coordination Métiers / MOA / MOE / IT"
+        ],
+        "document": {
+            "miniDC": "260224_Ludovic_MiniDC.pptx",
+            "image": "homme1.jpg"
+        },
+        "office": {
+            "name": "Brest"
+        }
+    }
+    },
+    {
+        "collaborator": {
+            "name": "Jean-Jacques",
+            "surname": "",
+            "title": "SOFTWARE_ENGINEERING",
+            "seniority": "Débutant",
+            "isAvailable": true,
+            "startAvailability": "2024-01-01",
+            "createdAt": "2024-01-01",
+            "updatedAt": "2024-01-01",
+            "highlight": "Jean-Jacques est développeur full stack diplômé d'un Master en Génie Logiciel, avec plusieurs expériences dans la conception et le développement d'applications web et scientifiques. Sa polyvalence lui permet d'évoluer aussi bien sur les environnements back-end que front-end, en intégrant des pratiques modernes (agilité, conteneurisation) et des technologies récentes.",
+            "experiences": [
+                {
+                    "name": "Développement fullstack pour IFREMER",
+                    "description": "Analyse technique et développement d'un POC pour le remplacement d'une application d'administration de données marine obsolète. Développement d'une API pour administrer les données de campagne en mer (SpringBoot, GraphQL, Java 21). Développement des interfaces front associées (Angular 19). Automatisation et conteneurisation de l'application (Gitlab, Docker). Implémentation de tests unitaires (JUnit). Documentation et recommandations techniques."
+                },
+                {
+                    "name": "Conception logicielle pour UMR ENTROPIE",
+                    "description": "Conception logicielle d'un outil de qualification de données issues du service national d'observation Reeftemps. Conception d'architecture fonctionnelle (Diagrammes de flux, schéma d'architecture, UML). Participation à la rédaction de cahier des charges et documentation technique. Prototypage UI / UX (Figma). Expérimentation et conteneurisation d'environnement applicatif (Python, Docker)."
+                },
+                {
+                    "name": "Développement fullstack pour le LAB-STICC",
+                    "description": "Développement de différents outils logiciels pour la montée en version d'une application de visualisation de séries temporelles. Modification et implémentation de nouveaux services (Java 8). Implémentation de nouvelles interfaces de visualisation (JavaFX). Conteneurisation de l'application (Docker). Implémentation de tests unitaires (JUnit). Participation à la refonte d'une partie de l'architecture de l'application."
+                },
+                {
+                    "name": "Développement backend pour Virtualys",
+                    "description": "Développement d'une API REST pour l'interconnexion d'un LMS avec un LRS et un LXP dans un contexte e-learning. Développement des services backend (PHP, Ajax). Gestion de la base de données associée (MariaDB). Mise en place des tests d'intégration automatisés (Python). Rédaction de la documentation technique."
+                }
+            ],
+            "skill": [
+                "Java",
+                "GraphQL",
+                "Javascript",
+                "SQL",
+                "Typescript",
+                "PHP",
+                "SpringBoot",
+                "AngularJS",
+                "Git",
+                "Docker",
+                "IntelliJ",
+                "Eclipse",
+                "VS Code",
+                "Figma"
+            ],
+            "document": {
+                "miniDC": "260303_Jean-Jacques_MiniDC.pptx",
+                "image": "homme2.png"
+            },
+            "office": {
+                "name": "Brest"
+            }
+        }
+    },
+    {
+        "collaborator": {
+            "name": "Alexandre",
+            "surname": "",
+            "title": "MANAGEMENT_AND_DELIVERY",
+            "seniority": "Senior",
+            "isAvailable": true,
+            "startAvailability": "2026-01-01",
+            "createdAt": "2024-01-01",
+            "updatedAt": "2024-01-01",
+            "highlight": "Avec 25 années d’expérience acquises dans les secteurs IT, assurance et agroalimentaire, Alexandre a pu développer des compétences en gestion de projet notamment dans les phases de coordination, de planification et de gestion de portefeuilles projets ainsi qu’en maîtrise d’ouvrage sur le recueil des besoins, les spécifications, les tests et la formation.​ Ses capacités d’analyse et de synthèse lui permettent d’intégrer une équipe rapidement et de répondre aux objectifs qui lui sont fixés.",
+            "experiences": [
+                {
+                    "name": "2023-2024 Even",
+                    "description": "Chef de projet/PMO. Gestion de portefeuille d'une dizaine de projets (déploiement de la fibre Orange sur une centaine de sites, déploiements et migrations de sites, serveurs et logiciels)."
+                },
+                {
+                    "name": "2022 AGROMOUSQUETAIRES",
+                    "description": "Chef de projet de la migration du progiciel VIF. Coordination des intervenants Agromousquetaires, VIF, Talend, SAP​."
+                },
+                {
+                    "name": "2018-2019 CIMUT",
+                    "description": "Pilotage et coordination de projets concernant la fin du RSI pour le CIMUT qui devait transférer l'ensemble des données des assurés vers le SI de la CNAM avec un soin particulier porté aux données plus sensibles de l'Assemblée Nationale."
+                },
+                {
+                    "name": "2016-2018 INDEPENDANT",
+                    "description": "Chef de Projet MOA (IARD) spécialisé dans l'installation et la migration du progiciel d'assurance Belair aux niveaux production, sinistres, documentations, procédures et comptabilité​."
+                },
+                {
+                    "name": "2010-2016 GENERALI",
+                    "description": "Support Organisation. L'agence GENERALI de Nouméa dirigée par la déléguée générale nécessitait une mise à jour de son SI. L'objectif était d'accompagner les mises à jour techniques, mises en place de tableaux de bord et de procédure afin de soutenir la croissance à 2 chiffres et l'absorption d'une agence de courtage et de sa mise en conformité."
+                },
+                {
+                    "name": "1999-2009 GRAS SAVOYE, BBS, CAP GEMINI",
+                    "description": "Responsable Informatique et Contrôle Interne, Ingénieur commercial, Technicien IT."
+                }
+            ],
+            "skill": [
+                "Windows",
+                "Linux",
+                "SQL",
+                "Base de données",
+                "Belair",
+                "Active Directory",
+                "Firewall Fortinet",
+                "Exchange",
+                "Lotus Notes",
+                "Agilité (Kanban, Scrum)",
+                "ITIL",
+                "Cycle en V",
+                "Assurer la communication entre les équipes",
+                "capacité d'adaptation multi sites/métiers",
+                "Réalisation d’audit pour proposer des solutions fonctionnelles",
+                "Capacité d'analyse et de synthèse pour réaliser des tableaux de bord",
+                "Rédaction de procédures"
+            ],
+            "document": {
+                "miniDC": "mini DC - Alexandre.pptx",
+                "image": "homme2.png"
+            },
+            "office": {
+                "name": "Brest"
+            }
+        }
+    }
+]
