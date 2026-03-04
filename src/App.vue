@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {ref} from 'vue'
 import CollaboratorCard from './components/CollaboratorCard.vue'
 import NeoButton from './components/NeoButton.vue'
