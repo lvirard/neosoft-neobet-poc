@@ -11,7 +11,7 @@ export class Collaborator {
         updatedAt:string;
         highlight:string;
         experiences:Experience[];
-        skills?:string[];
+        skills:string[];
         document:{miniDC:string, image:string};
         office:{name:string};
 
