@@ -25,16 +25,20 @@ const show = ref(false);
         </v-card-title>
         <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
 
+        <v-card-subtitle>
+            <v-icon icon="$location"></v-icon>
+            {{ collaborator.office.name }} - {{ collaborator.isAvailable ? "Disponible" : "Indisponible" }}</v-card-subtitle>
+
         <v-card-text>{{ collaborator.highlight }}</v-card-text>
 
-        <v-chip v-for="skill in collaborator.skills" :skill :key="skill.id" color="var(--neo-dark-blue)" variant="flat">
+        <v-chip v-for="skill in collaborator.skills" :skill :key="skill.id" color="var(--neo-dark-blue)" variant="outlined" class="mb-1 ms-1">
             {{ skill }}
         </v-chip>
 
         <v-card-actions>
-            <v-btn text="Voir plus" color="var(--neo-medium-blue)"></v-btn>
+            <v-btn text="Voir plus" color="var(--neo-dark-blue)" variant="flat" class="text-white"></v-btn>
             <v-spacer></v-spacer>
-            <v-btn :icon="show ? '$chevronUp' : '$chevronRight'" @click="show = !show"></v-btn>
+            <v-btn :icon="show ? '$chevronUp' : '$chevronRight'" @click="show = !show" variant="elevated" class="text-white"></v-btn>
         </v-card-actions>
 
         <v-expand-transition>

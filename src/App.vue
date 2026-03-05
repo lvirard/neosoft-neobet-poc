@@ -12,7 +12,7 @@ import profiles from './assets/data.json';
         <img :src="logo" alt="logo" class="nav-logo" />
       </v-toolbar-title>
       <template v-slot:append>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
       </template>
     </v-app-bar>
     
