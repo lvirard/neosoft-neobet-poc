@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import CollaboratorCard from './components/CollaboratorCard.vue';
-import logo from './assets/logo-neosoft-white.svg';
+import {ref} from 'vue'
+import CollaboratorCard from './components/CollaboratorCard.vue'
+import NeoButton from './components/NeoButton.vue'
+import logo from './assets/logo-neosoft-white.svg'
+import {collaborators} from './assets/data.js'
+import CollaboratorsListView from './views/CollaboratorsListView.vue'
 import profiles from './assets/data.json';
+
+const show = ref(false)
 </script>
 
 <template>
