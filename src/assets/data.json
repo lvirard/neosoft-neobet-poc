@@ -16,7 +16,7 @@
           "description": "Conceptrice & développeuse FullStack - Stage de fin de formation CDA au sein de la CPAM de Brest. Analyse de l'existant et des besoins fonctionnels. Participation à la conception technique. Développement back-end (Symfony). Développement front-end (VueJS). Intégration d'un système d'authentification SSO. Travail en environnement professionnel et collaboratif. Environnement : PHP, Symfony, VueJS, SSO, Git."
         },
         {
-          "name": "Mon lopin de mer – Projet transverse",
+          "name": "Mon lopin de mer - Projet transverse",
           "description": "Cheffe de projet & Game designer - Projet de médiation scientifique et éducatif mené sur 3 ans. Pilotage global d'un projet de médiation scientifique à destination d'un public scolaire. Démarche centrée utilisateur, basée sur l'itération (prototype → tests → adaptations). Coordination d'une trentaine d'acteurs (médiateurs, enseignants, scientifiques, partenaires). Organisation et animation de phases de tests utilisateurs (élèves). Adaptation continue du dispositif en fonction des retours terrain. Gestion des contraintes de planning et de ressources."
         },
         {
@@ -319,7 +319,7 @@
         },
         {
           "name": "Gestion de la relation client B2B bancaire",
-          "description": "Responsable d'un client bancaire – Gestion du système d'information, du site web et du Poste de Travail en marque blanche. Recueil et analyse des besoins avec le client / Rédaction de cahiers des charges. Coordination des équipes techniques pour les évolutions demandées / gestion des recettes. Gestion des coûts et des devis clients."
+          "description": "Responsable d'un client bancaire - Gestion du système d'information, du site web et du Poste de Travail en marque blanche. Recueil et analyse des besoins avec le client / Rédaction de cahiers des charges. Coordination des équipes techniques pour les évolutions demandées / gestion des recettes. Gestion des coûts et des devis clients."
         }
       ],
       "skills": [
@@ -399,7 +399,7 @@
       "experiences": [
         {
           "name": "Pilotage du développement d'une marketplace B2B freelance/industrie - cilaes.com",
-          "description": "Chef de projet IT (périmètre: 3000+ freelances, 100+ entreprises, 2023–2025). Gouvernance et cadrage: Définition des processus de gestion des comptes utilisateurs (entreprises et freelances), des outils de matching, et des espaces de communication sécurisés. Développement des fonctionnalités clés: Outil de dépôt d'offres de mission et de candidature, avec workflow de validation et notifications automatisées. Espace collaboratif pour la gestion des contrats (suivi des échéances, archivage). Intégration des APIs de paiement (Stripe) et d'IA (Mistral AI). Coordination transversale: Animation des ateliers de collecte de besoins avec les équipes métiers (commercial, juridique, support). Synchronisation des livrables entre les équipes techniques (dev, QA) et les parties prenantes externes (clients, partenaires). Suivi des performances: Mise en place de tableaux de bord pour suivre l'adoption de la plateforme, le taux de conversion (offres → contrats), et la satisfaction utilisateur (NPS). Reporting mensuel au COMEX sur les indicateurs clés."
+          "description": "Chef de projet IT (périmètre: 3000+ freelances, 100+ entreprises, 2023-2025). Gouvernance et cadrage: Définition des processus de gestion des comptes utilisateurs (entreprises et freelances), des outils de matching, et des espaces de communication sécurisés. Développement des fonctionnalités clés: Outil de dépôt d'offres de mission et de candidature, avec workflow de validation et notifications automatisées. Espace collaboratif pour la gestion des contrats (suivi des échéances, archivage). Intégration des APIs de paiement (Stripe) et d'IA (Mistral AI). Coordination transversale: Animation des ateliers de collecte de besoins avec les équipes métiers (commercial, juridique, support). Synchronisation des livrables entre les équipes techniques (dev, QA) et les parties prenantes externes (clients, partenaires). Suivi des performances: Mise en place de tableaux de bord pour suivre l'adoption de la plateforme, le taux de conversion (offres → contrats), et la satisfaction utilisateur (NPS). Reporting mensuel au COMEX sur les indicateurs clés."
         },
         {
           "name": "Optimisation UX et intégrations techniques pour un site emploi - Jeveuxtravailler.com",
@@ -457,8 +457,8 @@
                 "description": "Chef de projet, puis directeur de projet dématérialisation et industrialisation flux entrants groupe (courriers, mails, téléphonies…). Pilotage stratégique du projet : budget, planning, suivi des risques, des délais, des coûts (KPI, reporting…). Coordination multi-métier : logistique (courrier), DSI, MOA, Métier, Gestion, prestataires. Coordination des équipes et animation des comités (COPIL / CODIR / COMEX). Pilotage de projets transverses (convergence du SI retraite, transfert de la chaîne de numérisation)."
             },
             {
-                "name": "Responsable du développement et la mise en place d'un logiciel de gestion de flotte automobile pour My Leasing – Drive in",
-                "description": "Diriger et manager une équipe projets – Product Owner et directeur de projet. Encadrement et coordination des entités (clients, gestionnaires, prestataires et équipe interne), suivi du planning, des équipes et du budget. Pilotage du projet de bout en bout, rédaction cahier des charges, choix des prestataires, validation des livrables. Accompagnement des clients dans les changements organisationnels et fonctionnels (mise à disposition, formation et responsable du support…). Gestion et pilotage de nombreux fournisseurs privés et publiques."
+                "name": "Responsable du développement et la mise en place d'un logiciel de gestion de flotte automobile pour My Leasing - Drive in",
+                "description": "Diriger et manager une équipe projets - Product Owner et directeur de projet. Encadrement et coordination des entités (clients, gestionnaires, prestataires et équipe interne), suivi du planning, des équipes et du budget. Pilotage du projet de bout en bout, rédaction cahier des charges, choix des prestataires, validation des livrables. Accompagnement des clients dans les changements organisationnels et fonctionnels (mise à disposition, formation et responsable du support…). Gestion et pilotage de nombreux fournisseurs privés et publiques."
             }
         ],
         "skills": [
@@ -507,7 +507,7 @@
                     "description": "Développement d'une API REST pour l'interconnexion d'un LMS avec un LRS et un LXP dans un contexte e-learning. Développement des services backend (PHP, Ajax). Gestion de la base de données associée (MariaDB). Mise en place des tests d'intégration automatisés (Python). Rédaction de la documentation technique."
                 }
             ],
-            "skill": [
+            "skills": [
                 "Java",
                 "GraphQL",
                 "Javascript",
@@ -542,7 +542,7 @@
             "startAvailability": "2026-01-01",
             "createdAt": "2024-01-01",
             "updatedAt": "2024-01-01",
-            "highlight": "Avec 25 années d’expérience acquises dans les secteurs IT, assurance et agroalimentaire, Alexandre a pu développer des compétences en gestion de projet notamment dans les phases de coordination, de planification et de gestion de portefeuilles projets ainsi qu’en maîtrise d’ouvrage sur le recueil des besoins, les spécifications, les tests et la formation.​ Ses capacités d’analyse et de synthèse lui permettent d’intégrer une équipe rapidement et de répondre aux objectifs qui lui sont fixés.",
+            "highlight": "Avec 25 années d'expérience acquises dans les secteurs IT, assurance et agroalimentaire, Alexandre a pu développer des compétences en gestion de projet notamment dans les phases de coordination, de planification et de gestion de portefeuilles projets ainsi qu'en maîtrise d'ouvrage sur le recueil des besoins, les spécifications, les tests et la formation. Ses capacités d'analyse et de synthèse lui permettent d'intégrer une équipe rapidement et de répondre aux objectifs qui lui sont fixés.",
             "experiences": [
                 {
                     "name": "2023-2024 Even",
@@ -550,7 +550,7 @@
                 },
                 {
                     "name": "2022 AGROMOUSQUETAIRES",
-                    "description": "Chef de projet de la migration du progiciel VIF. Coordination des intervenants Agromousquetaires, VIF, Talend, SAP​."
+                    "description": "Chef de projet de la migration du progiciel VIF. Coordination des intervenants Agromousquetaires, VIF, Talend, SAP."
                 },
                 {
                     "name": "2018-2019 CIMUT",
@@ -558,7 +558,7 @@
                 },
                 {
                     "name": "2016-2018 INDEPENDANT",
-                    "description": "Chef de Projet MOA (IARD) spécialisé dans l'installation et la migration du progiciel d'assurance Belair aux niveaux production, sinistres, documentations, procédures et comptabilité​."
+                    "description": "Chef de Projet MOA (IARD) spécialisé dans l'installation et la migration du progiciel d'assurance Belair aux niveaux production, sinistres, documentations, procédures et comptabilité."
                 },
                 {
                     "name": "2010-2016 GENERALI",
@@ -569,7 +569,7 @@
                     "description": "Responsable Informatique et Contrôle Interne, Ingénieur commercial, Technicien IT."
                 }
             ],
-            "skill": [
+            "skills": [
                 "Windows",
                 "Linux",
                 "SQL",
@@ -584,7 +584,7 @@
                 "Cycle en V",
                 "Assurer la communication entre les équipes",
                 "capacité d'adaptation multi sites/métiers",
-                "Réalisation d’audit pour proposer des solutions fonctionnelles",
+                "Réalisation d'audit pour proposer des solutions fonctionnelles",
                 "Capacité d'analyse et de synthèse pour réaliser des tableaux de bord",
                 "Rédaction de procédures"
             ],

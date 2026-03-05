@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import {ref} from 'vue'
-import CollaboratorCard from './components/CollaboratorCard.vue'
-import NeoButton from './components/NeoButton.vue'
-import logo from './assets/logo-neosoft-white.svg'
-import {collaborators} from './assets/data.js'
-const show = ref(false)
+import CollaboratorCard from './components/CollaboratorCard.vue';
+import logo from './assets/logo-neosoft-white.svg';
+import profiles from './assets/data.json';
 </script>
 
 <template>
@@ -20,47 +17,7 @@ const show = ref(false)
     </v-app-bar>
     
     <v-main>
-      <v-card rounded="xl">
-        <v-avatar color="var(--neo-dark-blue)">
-          <v-icon icon="$account"></v-icon>
-        </v-avatar>
-        <v-card-title>Yves</v-card-title>
-        <v-card-subtitle>Developpeur FullStack</v-card-subtitle>      
-        <v-chip color="var(--neo-dark-blue)">PHP</v-chip>
-        <v-chip color="var(--neo-medium-blue)">Javascript</v-chip>
-        <v-chip color="var(--neo-light-blue)">CSS</v-chip>
-        <v-chip color="var(--neo-dark-blue)" variant="flat">Python</v-chip>
-        <v-chip color="var(--neo-medium-blue)" variant="flat">Typescript</v-chip>
-        <v-chip color="var(--neo-light-blue)" variant="flat">HTML</v-chip>
-        <v-chip-group>
-          <v-chip color="var(--neo-dark-blue)">PHP</v-chip>
-          <v-chip color="var(--neo-medium-blue)">Javascript</v-chip>
-          <v-chip color="var(--neo-light-blue)">CSS</v-chip>
-        </v-chip-group>
-        <v-chip-group>
-          <v-chip color="var(--neo-dark-blue)" variant="flat">Python</v-chip>
-          <v-chip color="var(--neo-medium-blue)" variant="flat">Typescript</v-chip>
-          <v-chip color="var(--neo-light-blue)" variant="flat">HTML</v-chip>
-        </v-chip-group>
-        <v-card-actions>
-          <v-btn text="Voir plus" color="var(--neo-medium-blue)"></v-btn>
-          <v-spacer></v-spacer>
-          <v-btn :icon="show ? '$chevronUp' : '$chevronDown'"
-          @click="show = !show"></v-btn>
-        </v-card-actions>
-
-        <v-expand-transition>
-          <div v-show="show">
-            <v-divider></v-divider>
-            <v-card-text>
-              Expérience de malade de ouf
-            </v-card-text>
-          </div>
-        </v-expand-transition>
-      </v-card>
-
-      <CollaboratorCard v-for="collaborator in collaborators" :collaborator :key="collaborator.id" />
-      <NeoButton title="clic" />
+      <CollaboratorCard v-for="profile in profiles" :profile :key="profile.collaborator.name" />
     </v-main>
   </v-app>
 </template>

@@ -1,44 +1,51 @@
-<script setup>
-import { Collaborator } from '@/models/Collaborator';
+<script setup lang="ts">
+import { ref } from 'vue';
 
-defineProps({
-    collaborator: {
-        type: Collaborator,
+const props = defineProps({
+    profile: {
+        type: Object,
         required: true
     },
-})
+});
+
+const collaborator = props.profile.collaborator;
+console.log(collaborator);
+
+const show = ref(false);
+
 </script>
 
 <template>
-    <div class="card">
-        <div>Nom : {{ collaborator.name }}</div>
-        <div>Métier : {{ collaborator.métier }}</div>
-        <div>Compétences :
-            <ul>
-                <li v-if="collaborator.compétences.dev.length > 0">
-                    Dev : <span v-for="element in collaborator.compétences.dev" :key="element.id">{{ element + " "}}</span> 
-                </li>
-                <li v-if="collaborator.compétences.ops.length > 0">
-                    Ops : <span v-for="element in collaborator.compétences.ops" :key="element.id">{{ element + " "}}</span> 
-                </li>
-                <li v-if="collaborator.compétences.sec.length > 0">
-                    Sec : <span v-for="element in collaborator.compétences.sec" :key="element.id">{{ element + " "}}</span> 
-                </li>
-            </ul>
-        </div>
-        <div class="actions">
-            <div class="refuse candidate">
-                <v-btn rounded="xl">
-                    <v-icon icon="$close"></v-icon>
-                </v-btn>
+    <v-card rounded="lg" class="mb-4 pa-4">
+        <v-card-title>
+            <v-avatar color="var(--neo-dark-blue)">
+                <span class="text-headline-small text-white">{{ collaborator.name[0] }}</span>
+            </v-avatar>
+            {{ collaborator.name }}
+        </v-card-title>
+        <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
+
+        <v-card-text>{{ collaborator.highlight }}</v-card-text>
+
+        <v-chip v-for="skill in collaborator.skills" :skill :key="skill.id" color="var(--neo-dark-blue)" variant="flat">
+            {{ skill }}
+        </v-chip>
+
+        <v-card-actions>
+            <v-btn text="Voir plus" color="var(--neo-medium-blue)"></v-btn>
+            <v-spacer></v-spacer>
+            <v-btn :icon="show ? '$chevronUp' : '$chevronRight'" @click="show = !show"></v-btn>
+        </v-card-actions>
+
+        <v-expand-transition>
+            <div v-show="show">
+                <v-divider></v-divider>
+                <v-card-text>
+
+                </v-card-text>
             </div>
-            <div class="validateCandidate">
-                <v-btn rounded="xl">
-                    <v-icon icon="$handshake"></v-icon>
-                </v-btn>
-            </div>
-        </div>
-    </div>
+        </v-expand-transition>
+    </v-card>
 </template>
 
 <style>
