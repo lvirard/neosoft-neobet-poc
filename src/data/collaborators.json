@@ -1,8 +1,8 @@
 [
   {
     "collaborator": {
-      "name": "Laetitia",
-      "surname": "",
+      "name": "VIRARD",
+      "surname": "Laetitia",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Débutant",
       "isAvailable": true,
@@ -54,8 +54,8 @@
   },
   {
     "collaborator": {
-      "name": "Olivier",
-      "surname": "",
+      "name": "BOENNEC",
+      "surname": "Olivier",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Expérimenté",
       "isAvailable": false,
@@ -101,8 +101,8 @@
   },
   {
     "collaborator": {
-      "name": "Baptiste",
-      "surname": "",
+      "name": "CABIOCH",
+      "surname": "Baptiste",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Débutant",
       "isAvailable": false,
@@ -150,8 +150,8 @@
   },
   {
     "collaborator": {
-      "name": "Jason",
-      "surname": "",
+      "name": "CLAIREAUX",
+      "surname": "Jason",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Senior",
       "isAvailable": true,
@@ -193,8 +193,8 @@
   },
   {
     "collaborator": {
-      "name": "Kévin",
-      "surname": "",
+      "name": "MORIN",
+      "surname": "Kévin",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Senior",
       "isAvailable": true,
@@ -248,8 +248,8 @@
   },
   {
   "collaborator": {
-    "name": "Raphaël",
-    "surname": "",
+    "name": "ROUGIS",
+    "surname": "Raphaël",
     "title": "AGILITY_AND_COUNSEL",
     "seniority": "Débutant",
     "isAvailable": true,
@@ -291,8 +291,8 @@
   },
   {
     "collaborator": {
-      "name": "Amélie",
-      "surname": "",
+      "name": "PIEDNOIR",
+      "surname": "Amélie",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Senior",
       "isAvailable": true,
@@ -342,8 +342,8 @@
   },
   {
     "collaborator": {
-      "name": "Axel",
-      "surname": "Quéméneur",
+      "name": "QUEMENEUR",
+      "surname": "Axel",
       "title": "CYBERSECURITY",
       "seniority": "Expérimenté",
       "isAvailable": true,
@@ -387,8 +387,8 @@
   },
   {
     "collaborator": {
-      "name": "Bertrand",
-      "surname": "Jegou",
+      "name": "JEGOU DE LAZ",
+      "surname": "Bertrand",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Senior",
       "isAvailable": true,
@@ -430,8 +430,8 @@
   },
     {
     "collaborator": {
-        "name": "Ludovic",
-        "surname": "",
+        "name": "LUDOVIC",
+        "surname": "Ludovic",
         "title": "MANAGEMENT_AND_DELIVERY",
         "seniority": "Senior",
         "isAvailable": true,
@@ -480,8 +480,8 @@
     },
     {
         "collaborator": {
-            "name": "Jean-Jacques",
-            "surname": "",
+            "name": "MOUANDA",
+            "surname": "Jean-Jacques",
             "title": "SOFTWARE_ENGINEERING",
             "seniority": "Débutant",
             "isAvailable": true,
@@ -507,7 +507,7 @@
                     "description": "Développement d'une API REST pour l'interconnexion d'un LMS avec un LRS et un LXP dans un contexte e-learning. Développement des services backend (PHP, Ajax). Gestion de la base de données associée (MariaDB). Mise en place des tests d'intégration automatisés (Python). Rédaction de la documentation technique."
                 }
             ],
-            "skill": [
+            "skills": [
                 "Java",
                 "GraphQL",
                 "Javascript",
@@ -534,8 +534,8 @@
     },
     {
         "collaborator": {
-            "name": "Alexandre",
-            "surname": "",
+            "name": "DOUDARD",
+            "surname": "Alexandre",
             "title": "MANAGEMENT_AND_DELIVERY",
             "seniority": "Senior",
             "isAvailable": true,
@@ -569,7 +569,7 @@
                     "description": "Responsable Informatique et Contrôle Interne, Ingénieur commercial, Technicien IT."
                 }
             ],
-            "skill": [
+            "skills": [
                 "Windows",
                 "Linux",
                 "SQL",
@@ -593,7 +593,7 @@
                 "image": "homme2.png"
             },
             "office": {
-                "name": "Brest"
+                "name": "Rennes"
             }
         }
     }
