@@ -13,6 +13,9 @@ function onTitleChange(value: string | null) {
 
 <template>
   <v-card class="pa-4 mb-4">
+    <v-container class="pa-0">
+
+    
     <v-row dense>
         <v-col cols="12" sm="3">
             <v-select
@@ -58,8 +61,8 @@ function onTitleChange(value: string | null) {
             />
         </v-col>
     </v-row>
-    <v-row align="center" dense>
-        <v-col cols="6" sm="3">
+    <v-row align="center" dense justify="space-between">
+        <v-col cols="12" sm="auto">
             <v-switch
                 :model-value="store.filters.isAvailable"
                 @update:model-value="store.setFilter('isAvailable', $event ?? undefined)"
@@ -69,11 +72,21 @@ function onTitleChange(value: string | null) {
                 density="comfortable"
             />
         </v-col>
-        <v-col cols="6" class="d-flex ml-auto justify-end">
-            <v-btn @click="store.resetFilters()" variant="text" color="secondary">
+        <v-col 
+            cols="12"
+            sm="auto"
+            class="d-flex justify-end justify-sm-end"
+        >
+            <v-btn 
+                @click="store.resetFilters()" 
+                variant="text" 
+                color="secondary"
+                hide-details
+                density="comfortable">
             Réinitialiser
             </v-btn>
         </v-col>
     </v-row>
+    </v-container>
   </v-card>
 </template>
