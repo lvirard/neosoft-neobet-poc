@@ -2,10 +2,10 @@
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker} from '@mdi/js'
+import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline } from '@mdi/js'
 
 export default createVuetify({
-	defaults: {
+    defaults: {
         VBtn: {
             color: 'var(--neo-medium-blue)',
         }
@@ -22,6 +22,8 @@ export default createVuetify({
             account: mdiAccountCircle,
             magnify: mdiMagnify,
             location: mdiMapMarker,
+            star: mdiStar,
+            starOutline: mdiStarOutline,
         },
         sets: { mdi }
     }

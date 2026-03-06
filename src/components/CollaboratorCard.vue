@@ -1,68 +1,102 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 const props = defineProps({
-    collaborator: {
-        type: Object,
-        required: true
-    },
+  collaborator: {
+    type: Object,
+    required: true,
+  },
 });
 
-const show = ref(false);
 const router = useRouter();
+const isStarred = ref(false);
+
+function toggleStar() {
+  isStarred.value = !isStarred.value;
+}
 
 function goToDetail() {
-    router.push('/detail');
+  router.push({
+    path: "detail/" + props.collaborator.name,
+  });
 }
 </script>
 
 <template>
-    <v-card rounded="lg" class="mb-4 pa-4">
-        <v-card-title>
-            <v-avatar color="var(--neo-dark-blue)">
-                <v-img v-if="collaborator.document.image" :src="'/img/' + collaborator.document.image"></v-img>
-                <span  v-else class="text-headline-small text-white">{{ collaborator.name[0] }}{{ collaborator.surname[0] }}</span>
-            </v-avatar>
-            {{ collaborator.surname }}
-        </v-card-title>
-        <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
+  <v-card rounded="lg" class="mb-4 pa-4">
+    <v-card-title>
+      <v-avatar color="var(--neo-dark-blue)">
+        <v-img
+          v-if="collaborator.document.image"
+          :src="'/img/' + collaborator.document.image"
+        ></v-img>
+        <span v-else class="text-headline-small text-white">
+          {{ collaborator.name[0] }}{{ collaborator.surname[0] }}
+        </span>
+      </v-avatar>
+      {{ collaborator.surname }}
 
-        <v-card-subtitle>
-            <v-icon icon="$location"></v-icon>
-            {{ collaborator.office.name }} - {{ collaborator.isAvailable ? "Disponible" : "Indisponible" }}</v-card-subtitle>
+      <v-btn icon="" variant="text" @click="toggleStar">
+        <v-icon :icon="isStarred ? '$star' : '$starOutline'" />
+      </v-btn>
+    </v-card-title>
+    <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
 
-        <v-card-text>{{ collaborator.highlight }}</v-card-text>
+    <v-card-subtitle>
+      <v-icon icon="$location"></v-icon>
+      {{ collaborator.office.name }} -
+      {{ collaborator.isAvailable ? "Disponible" : "Indisponible" }}
+    </v-card-subtitle>
 
-        <v-chip v-for="skill in collaborator.skills" :skill :key="skill.id" color="var(--neo-dark-blue)" variant="outlined" class="mb-1 ms-1">
-            {{ skill }}
-        </v-chip>
+    <v-card-text>{{ collaborator.highlight }}</v-card-text>
 
-        <v-card-actions>
-            <v-btn text="Voir plus" color="var(--neo-dark-blue)" variant="flat" class="text-white"></v-btn>
-            <v-spacer></v-spacer>
-            <v-btn :icon="'$chevronRight'" @click="goToDetail" variant="elevated" class="text-white"></v-btn>
-        </v-card-actions>
-    </v-card>
+    <v-chip
+      v-for="skill in collaborator.skills"
+      :skill
+      :key="skill.id"
+      color="var(--neo-dark-blue)"
+      variant="outlined"
+      class="mb-1 ms-1"
+    >
+      {{ skill }}
+    </v-chip>
+
+    <v-card-actions>
+      <v-btn
+        text="Voir plus"
+        color="var(--neo-dark-blue)"
+        variant="flat"
+        class="text-white"
+      ></v-btn>
+      <v-spacer></v-spacer>
+      <v-btn
+        :icon="'$chevronRight'"
+        @click="goToDetail"
+        variant="elevated"
+        class="text-white"
+      ></v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <style>
 .title-font {
-    font-family: "Chillax Bold", "Arial", sans-serif;
+  font-family: "Chillax Bold", "Arial", sans-serif;
 }
 
 .card {
-    background: var(--neo-dark-blue);
-    border-radius: 16px;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 2.4rem 1.2rem;
+  background: var(--neo-dark-blue);
+  border-radius: 16px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 2.4rem 1.2rem;
 }
 
 .actions {
-    color: var(--neo-dark-blue);
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+  color: var(--neo-dark-blue);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 </style>

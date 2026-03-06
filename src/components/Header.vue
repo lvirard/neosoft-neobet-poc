@@ -14,7 +14,7 @@ import logo from '@/assets/logo-neosoft-white.svg';
           </router-link>
         </v-toolbar-title>
         <template v-slot:append>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
         </template>
     </v-app-bar>
 </template>

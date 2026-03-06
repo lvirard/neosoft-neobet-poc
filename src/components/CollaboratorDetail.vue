@@ -26,6 +26,7 @@ const props = defineProps({
             <v-card-text>{{ experience.description }}</v-card-text>
         </v-list-item>
     </v-card>
+    <v-btn class="text-white" @click="$router.back()">Retour</v-btn>
 </template>
 
 <style></style>
