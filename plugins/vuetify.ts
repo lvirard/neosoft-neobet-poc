@@ -2,7 +2,7 @@
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiChevronRight, mdiAccountCircle, mdiMapMarker } from '@mdi/js'
+import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker} from '@mdi/js'
 
 export default createVuetify({
 	defaults: {
@@ -20,6 +20,7 @@ export default createVuetify({
             chevronDown: mdiChevronDown,
             chevronRight: mdiChevronRight,
             account: mdiAccountCircle,
+            magnify: mdiMagnify,
             location: mdiMapMarker,
         },
         sets: { mdi }
