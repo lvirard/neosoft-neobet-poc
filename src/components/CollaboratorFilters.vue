@@ -19,10 +19,10 @@ function onTitleChange(value: string | null) {
     <v-row dense>
         <v-col cols="12" sm="3">
             <v-select
-                :model-value="store.filters.title"
-                @update:model-value="onTitleChange"
-                :items="titleOptions"
-                label="Métier"
+                :model-value="store.filters.office"
+                @update:model-value="store.setFilter('office', $event)"
+                :items="officeOptions"
+                label="Secteur géographique"
                 clearable
                 density="comfortable"
                 hide-details
@@ -30,10 +30,10 @@ function onTitleChange(value: string | null) {
         </v-col>
         <v-col cols="12" sm="3">
             <v-select
-                :model-value="store.filters.office"
-                @update:model-value="store.setFilter('office', $event)"
-                :items="officeOptions"
-                label="Agence"
+                :model-value="store.filters.title"
+                @update:model-value="onTitleChange"
+                :items="titleOptions"
+                label="Métier"
                 clearable
                 density="comfortable"
                 hide-details
