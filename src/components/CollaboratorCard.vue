@@ -1,27 +1,30 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const props = defineProps({
-    profile: {
+    collaborator: {
         type: Object,
         required: true
     },
 });
 
-const collaborator = props.profile.collaborator;
-console.log(collaborator);
-
 const show = ref(false);
+const router = useRouter();
 
+function goToDetail() {
+    router.push('/detail');
+}
 </script>
 
 <template>
     <v-card rounded="lg" class="mb-4 pa-4">
         <v-card-title>
             <v-avatar color="var(--neo-dark-blue)">
-                <span class="text-headline-small text-white">{{ collaborator.name[0] }}</span>
+                <v-img v-if="collaborator.document.image" :src="'/img/' + collaborator.document.image"></v-img>
+                <span  v-else class="text-headline-small text-white">{{ collaborator.name[0] }}{{ collaborator.surname[0] }}</span>
             </v-avatar>
-            {{ collaborator.name }}
+            {{ collaborator.surname }}
         </v-card-title>
         <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
 
@@ -38,17 +41,8 @@ const show = ref(false);
         <v-card-actions>
             <v-btn text="Voir plus" color="var(--neo-dark-blue)" variant="flat" class="text-white"></v-btn>
             <v-spacer></v-spacer>
-            <v-btn :icon="show ? '$chevronUp' : '$chevronRight'" @click="show = !show" variant="elevated" class="text-white"></v-btn>
+            <v-btn :icon="'$chevronRight'" @click="goToDetail" variant="elevated" class="text-white"></v-btn>
         </v-card-actions>
-
-        <v-expand-transition>
-            <div v-show="show">
-                <v-divider></v-divider>
-                <v-card-text>
-
-                </v-card-text>
-            </div>
-        </v-expand-transition>
     </v-card>
 </template>
 

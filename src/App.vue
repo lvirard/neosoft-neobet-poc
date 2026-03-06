@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import {ref} from 'vue'
 import CollaboratorCard from './components/CollaboratorCard.vue'
-import NeoButton from './components/NeoButton.vue'
+import CollaboratorDetail from './components/CollaboratorDetail.vue'
 import logo from './assets/logo-neosoft-white.svg'
-import {collaborators} from './assets/data.js'
 import CollaboratorsListView from './views/CollaboratorsListView.vue'
-import profiles from './assets/data.json';
+
+import { useCollaboratorStore } from '@/stores/collaboratorsListStore';
+const store = useCollaboratorStore();
 
 const show = ref(false)
 </script>
@@ -23,7 +24,8 @@ const show = ref(false)
     </v-app-bar>
     
     <v-main>
-      <CollaboratorCard v-for="profile in profiles" :profile :key="profile.collaborator.name" />
+      <CollaboratorDetail :collaborator="store.filteredCollaborators[0]" />
+      <!--<CollaboratorCard v-for="collaborator in store.filteredCollaborators" :collaborator ey="profile.name" />-->
     </v-main>
   </v-app>
 </template>
