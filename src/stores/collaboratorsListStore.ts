@@ -8,7 +8,7 @@ import { Filters } from '@/types/filters';
 export const useCollaboratorStore = defineStore('collaborator', () => {
   const allCollaborators = ref<Collaborator[]>(
         rawData.map(entry => entry.collaborator)
-);
+  );
 
   const filters = ref<Filters>({
     search: '',
@@ -17,6 +17,8 @@ export const useCollaboratorStore = defineStore('collaborator', () => {
     seniority: undefined,
     isAvailable: undefined
   })
+
+  const favoriteCollaborators = ref<Collaborator[]>([]);
 
   // La liste filtrée des collaborateurs, calculée à partir de la liste complète et des filtres
   const filteredCollaborators= computed(() => {
@@ -55,5 +57,15 @@ export const useCollaboratorStore = defineStore('collaborator', () => {
     filters.value = { search: '', title: undefined, office: undefined, seniority: undefined, isAvailable: undefined };
   }
 
-  return { allCollaborators, filters, filteredCollaborators, setFilter, resetFilters }
+  function addToFavorites(collaborator: Collaborator) {
+    if (!favoriteCollaborators.value.some(c => c.id === collaborator.id)) {
+      favoriteCollaborators.value.push(collaborator);
+    }
+  }
+
+  function removeFromFavorites(collaborator: Collaborator) {
+    favoriteCollaborators.value = favoriteCollaborators.value.filter(c => c.id !== collaborator.id);
+  }
+
+  return { allCollaborators, filters, filteredCollaborators, setFilter, resetFilters, favoriteCollaborators, addToFavorites, removeFromFavorites }
 })

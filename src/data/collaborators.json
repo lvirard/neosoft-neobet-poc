@@ -1,6 +1,7 @@
 [
   {
     "collaborator": {
+      "id": 1,
       "name": "VIRARD",
       "surname": "Laetitia",
       "title": "SOFTWARE_ENGINEERING",
@@ -54,6 +55,7 @@
   },
   {
     "collaborator": {
+      "id": 2,
       "name": "BOENNEC",
       "surname": "Olivier",
       "title": "MANAGEMENT_AND_DELIVERY",
@@ -101,6 +103,7 @@
   },
   {
     "collaborator": {
+      "id": 3,
       "name": "CABIOCH",
       "surname": "Baptiste",
       "title": "MANAGEMENT_AND_DELIVERY",
@@ -150,6 +153,7 @@
   },
   {
     "collaborator": {
+      "id": 4,
       "name": "CLAIREAUX",
       "surname": "Jason",
       "title": "SOFTWARE_ENGINEERING",
@@ -193,6 +197,7 @@
   },
   {
     "collaborator": {
+      "id": 5,
       "name": "MORIN",
       "surname": "Kévin",
       "title": "SOFTWARE_ENGINEERING",
@@ -248,6 +253,7 @@
   },
   {
   "collaborator": {
+    "id": 6,
     "name": "ROUGIS",
     "surname": "Raphaël",
     "title": "AGILITY_AND_COUNSEL",
@@ -291,6 +297,7 @@
   },
   {
     "collaborator": {
+      "id": 7,
       "name": "PIEDNOIR",
       "surname": "Amélie",
       "title": "MANAGEMENT_AND_DELIVERY",
@@ -342,6 +349,7 @@
   },
   {
     "collaborator": {
+      "id": 8,
       "name": "QUEMENEUR",
       "surname": "Axel",
       "title": "CYBERSECURITY",
@@ -387,6 +395,7 @@
   },
   {
     "collaborator": {
+      "id": 9,
       "name": "JEGOU DE LAZ",
       "surname": "Bertrand",
       "title": "MANAGEMENT_AND_DELIVERY",
@@ -430,6 +439,7 @@
   },
     {
     "collaborator": {
+        "id": 10,
         "name": "LUDOVIC",
         "surname": "Ludovic",
         "title": "MANAGEMENT_AND_DELIVERY",
@@ -480,6 +490,7 @@
     },
     {
         "collaborator": {
+            "id": 11,
             "name": "MOUANDA",
             "surname": "Jean-Jacques",
             "title": "SOFTWARE_ENGINEERING",
@@ -534,6 +545,7 @@
     },
     {
         "collaborator": {
+            "id": 12,
             "name": "DOUDARD",
             "surname": "Alexandre",
             "title": "MANAGEMENT_AND_DELIVERY",

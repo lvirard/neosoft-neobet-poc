@@ -1,19 +1,30 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, PropType, ref } from "vue";
 import { useRouter } from "vue-router";
+import { useCollaboratorStore} from "@/stores/collaboratorsListStore";
+import { Collaborator } from "@/types/collaborator";
 
 const props = defineProps({
   collaborator: {
-    type: Object,
+    type: Object as PropType<Collaborator>,
     required: true,
   },
 });
 
 const router = useRouter();
-const isStarred = ref(false);
+const collaboratorStore = useCollaboratorStore();
+const isStarred = computed(() =>
+  collaboratorStore.favoriteCollaborators.some(
+    c => c.id === props.collaborator.id
+  )
+);
 
 function toggleStar() {
-  isStarred.value = !isStarred.value;
+  if (isStarred.value) {
+    collaboratorStore.removeFromFavorites(props.collaborator)
+  } else {
+    collaboratorStore.addToFavorites(props.collaborator)
+  }
 }
 
 function goToDetail() {

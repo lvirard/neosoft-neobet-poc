@@ -1,6 +1,7 @@
 import { Experience } from "./experience";
 
 export class Collaborator {
+        id:number;
         name:string;
         surname:string;
         title:string;
@@ -16,6 +17,7 @@ export class Collaborator {
         office:{name:string};
 
     constructor(
+        id:number,
         name:string, 
         surname:string, 
         title:string, 
@@ -30,6 +32,7 @@ export class Collaborator {
         document:{miniDC:string, image:string},
         office:{name:string},
     ) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.title = title;

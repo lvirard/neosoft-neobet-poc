@@ -14,7 +14,9 @@ import logo from '@/assets/logo-neosoft-white.svg';
           </router-link>
         </v-toolbar-title>
         <template v-slot:append>
-            <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
+            <v-btn icon :to="{ name: 'favorites' }">
+              <v-icon color="white">$starOutline</v-icon>
+            </v-btn>
         </template>
     </v-app-bar>
 </template>
