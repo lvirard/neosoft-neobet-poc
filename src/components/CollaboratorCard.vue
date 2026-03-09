@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, PropType, ref } from "vue";
+import { computed, PropType } from "vue";
 import { useRouter } from "vue-router";
 import { useCollaboratorStore} from "@/stores/collaboratorsListStore";
 import { Collaborator } from "@/types/collaborator";
