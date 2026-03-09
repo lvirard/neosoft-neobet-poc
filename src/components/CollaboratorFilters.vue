@@ -63,7 +63,9 @@ function onTitleChange(value: string | null) {
         <v-col cols="12" sm="auto">
           <v-switch
             :model-value="store.filters.isAvailable"
-            @update:model-value="store.setFilter('isAvailable', $event ?? undefined)"
+            @update:model-value="
+              store.setFilter('isAvailable', $event ?? undefined)
+            "
             label="Disponibles"
             color="primary"
             hide-details

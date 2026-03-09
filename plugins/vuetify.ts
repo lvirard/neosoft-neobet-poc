@@ -2,12 +2,13 @@
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline } from '@mdi/js'
+import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline, mdiCheck, mdiPhone, mdiCalendarCheck, mdiCalendarRemove } from '@mdi/js'
 
 export default createVuetify({
     defaults: {
         VBtn: {
             color: 'var(--neo-medium-blue)',
+            class: ['text-white', 'rounded-xl'],
         }
     },
     icons: {
@@ -24,6 +25,10 @@ export default createVuetify({
             location: mdiMapMarker,
             star: mdiStar,
             starOutline: mdiStarOutline,
+            check: mdiCheck,
+            phone: mdiPhone,
+            calendarCheck: mdiCalendarCheck,
+            calendarRemove: mdiCalendarRemove,
         },
         sets: { mdi }
     }

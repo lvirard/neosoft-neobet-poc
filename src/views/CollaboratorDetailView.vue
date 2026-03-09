@@ -16,13 +16,13 @@ const store = useCollaboratorStore();
 const resolved = computed<Collaborator | undefined>(() => {
   if (props.collaborator) return props.collaborator;
   const name = String(route.params.name || route.query.name || "");
-  return store.allCollaborators.find(c => c.name === name);
+  return store.allCollaborators.find((c) => c.name === name);
 });
 
 // if none could be found, redirect back to the list after the current tick
 watchEffect(() => {
   if (resolved.value === undefined) {
-    router.replace({ name: 'collaboratorsList' });
+    router.replace({ name: "collaboratorsList" });
   }
 });
 </script>

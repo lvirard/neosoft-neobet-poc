@@ -37,7 +37,17 @@ function goToDetail() {
 <template>
   <v-card rounded="lg" class="mb-4 pa-4">
     <v-card-title>
-      <v-avatar color="var(--neo-dark-blue)">
+      <v-avatar
+        color="var(--neo-dark-blue)"
+        :badge="{ color: collaborator.isAvailable ? 'green' : 'red' }"
+      >
+        <template v-slot:badge>
+          <v-icon
+            :icon="
+              collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'
+            "
+          ></v-icon>
+        </template>
         <v-img
           v-if="collaborator.document.image"
           :src="'/img/' + collaborator.document.image"
@@ -73,20 +83,11 @@ function goToDetail() {
       {{ skill }}
     </v-chip>
 
-    <v-card-actions>
-      <v-btn
-        text="Voir plus"
-        color="var(--neo-dark-blue)"
-        variant="flat"
-        class="text-white"
-      ></v-btn>
-      <v-spacer></v-spacer>
-      <v-btn
-        :icon="'$chevronRight'"
-        @click="goToDetail"
-        variant="elevated"
-        class="text-white"
-      ></v-btn>
+    <v-card-actions class="justify-center">
+      <v-btn variant="flat" rounded="xl" class="text-white" @click="goToDetail">
+        <template v-slot:prepend><v-icon icon="$magnify"></v-icon> </template>
+        Voir plus
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
