@@ -84,7 +84,7 @@ function goToDetail() {
     </v-chip>
 
     <v-card-actions class="justify-center">
-      <v-btn variant="flat" rounded="xl" class="text-white" @click="goToDetail">
+      <v-btn variant="flat" rounded="xl" class="text-white" @click="goToDetail" width="100%">
         <template v-slot:prepend><v-icon icon="$magnify"></v-icon> </template>
         Voir plus
       </v-btn>
