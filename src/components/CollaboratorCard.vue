@@ -30,8 +30,12 @@ function goToDetail() {
         color="var(--neo-dark-blue)"
         :badge="{ color: collaborator.isAvailable ? 'green' : 'red' }"
       >
-        <template v-slot:badge color="red">
-          <v-icon :icon="collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'"></v-icon>
+        <template v-slot:badge>
+          <v-icon
+            :icon="
+              collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'
+            "
+          ></v-icon>
         </template>
         <v-img
           v-if="collaborator.document.image"

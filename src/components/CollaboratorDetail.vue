@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
   collaborator: {
     type: Object,
     required: true,
@@ -10,12 +10,16 @@ const props = defineProps({
 <template>
   <h3>
     <v-avatar
-        color="var(--neo-dark-blue)"
-        :badge="{ color: collaborator.isAvailable ? 'green' : 'red' }"
-      >
-        <template v-slot:badge color="red">
-          <v-icon :icon="collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'"></v-icon>
-        </template>
+      color="var(--neo-dark-blue)"
+      :badge="{ color: collaborator.isAvailable ? 'green' : 'red' }"
+    >
+      <template v-slot:badge>
+        <v-icon
+          :icon="
+            collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'
+          "
+        ></v-icon>
+      </template>
       <v-img
         v-if="collaborator.document.image"
         :src="'/img/' + collaborator.document.image"
@@ -27,12 +31,18 @@ const props = defineProps({
     {{ collaborator.surname }}
   </h3>
   <span class="text-grey">
-    <v-icon icon="$location"></v-icon> {{ collaborator.office.name }}
-    - {{ collaborator.seniority }}
+    <v-icon icon="$location"></v-icon> {{ collaborator.office.name }} -
+    {{ collaborator.seniority }}
   </span>
 
-  <v-list-item v-for="experience in collaborator.experiences" class="pa-0">
-    <h3 class="text-break text-pre-wrap font-weight-bold">{{ experience.name }}</h3>
+  <v-list-item
+    v-for="experience in collaborator.experiences"
+    :key="experience.name"
+    class="pa-0"
+  >
+    <h3 class="text-break text-pre-wrap font-weight-bold">
+      {{ experience.name }}
+    </h3>
     <p>{{ experience.description }}</p>
   </v-list-item>
   <v-btn @click="$router.back()">Retour</v-btn>
@@ -47,7 +57,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-  h3 {
-    font-weight: 500;
-  }
+h3 {
+  font-weight: 500;
+}
 </style>

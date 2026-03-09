@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Header from '@/components/Header.vue';
+import Header from "@/components/SiteHeader.vue";
 </script>
 
 <template>
@@ -12,4 +12,3 @@ import Header from '@/components/Header.vue';
     </v-main>
   </v-app>
 </template>
-
