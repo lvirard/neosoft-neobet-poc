@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vitest/config'
+
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
 import vueDevTools from 'vite-plugin-vue-devtools'
@@ -12,6 +13,7 @@ export default defineConfig({
     vuetify({ autoImport: true }),
     vueDevTools(),
   ],
+  base: '/neosoft-neobet-poc/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
