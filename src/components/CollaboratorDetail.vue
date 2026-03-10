@@ -5,6 +5,7 @@ defineProps({
     required: true,
   },
 });
+const imgPath = (img: string) => `${import.meta.env.BASE_URL}img/${img}`
 </script>
 
 <template>
@@ -22,7 +23,7 @@ defineProps({
       </template>
       <v-img
         v-if="collaborator.document.image"
-        :src="'/img/' + collaborator.document.image"
+        :src="imgPath(collaborator.document.image)"
       ></v-img>
       <span v-else class="text-headline-small text-white">
         {{ collaborator.name[0] }}{{ collaborator.surname[0] }}
