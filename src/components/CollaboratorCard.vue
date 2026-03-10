@@ -77,8 +77,8 @@ function goToDetail() {
     <v-chip
       v-for="skill in collaborator.skills"
       :skill
-      :key="skill.id"
-      color="var(--neo-dark-blue)"
+      :key="skill"
+      :color="$vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'"
       variant="outlined"
       class="mb-1 ms-1"
     >
@@ -86,7 +86,7 @@ function goToDetail() {
     </v-chip>
 
     <v-card-actions class="justify-center">
-      <v-btn variant="flat" rounded="xl" class="text-white" @click="goToDetail" width="100%">
+      <v-btn variant="flat" rounded="xl" class="text-white w-100" @click="goToDetail">
         <template v-slot:prepend><v-icon icon="$magnify"></v-icon> </template>
         Voir plus
       </v-btn>
