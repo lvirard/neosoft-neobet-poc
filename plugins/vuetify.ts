@@ -2,13 +2,21 @@
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline, mdiCheck, mdiPhone, mdiCalendarCheck, mdiCalendarRemove } from '@mdi/js'
+import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline, mdiCheck, mdiPhone, mdiCalendarCheck, mdiCalendarRemove, mdiEyeOff, mdiLock, mdiEye, mdiEmail, mdiDelete } from '@mdi/js'
 
 export default createVuetify({
     defaults: {
         VBtn: {
             color: 'var(--neo-medium-blue)',
             class: ['text-white', 'rounded-xl'],
+        }
+    },
+    locale: {
+        locale: 'fr',
+    },
+    date: {
+        locale: {
+            fr: 'fr-FR',
         }
     },
     icons: {
@@ -29,6 +37,11 @@ export default createVuetify({
             phone: mdiPhone,
             calendarCheck: mdiCalendarCheck,
             calendarRemove: mdiCalendarRemove,
+            eyeOff: mdiEyeOff,
+            eye: mdiEye,
+            lock: mdiLock,
+            email: mdiEmail,
+            delete: mdiDelete,
         },
         sets: { mdi }
     }
