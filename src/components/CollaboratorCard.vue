@@ -13,6 +13,9 @@ const props = defineProps({
 
 const router = useRouter();
 const collaboratorStore = useCollaboratorStore();
+
+const skills = props.collaborator.skills.slice(0,3);
+
 const isStarred = computed(() =>
   collaboratorStore.favoriteCollaborators.some(
     c => c.id === props.collaborator.id
@@ -73,7 +76,7 @@ function goToDetail() {
     <v-card-text>{{ collaborator.highlight }}</v-card-text>
 
     <v-chip
-      v-for="skill in collaborator.skills"
+      v-for="skill in skills"
       :skill
       :key="skill"
       :color="$vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'"
@@ -82,6 +85,11 @@ function goToDetail() {
     >
       {{ skill }}
     </v-chip>
+    <v-chip
+      :color="$vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'"
+      variant="outlined"
+      class="mb-1 ms-1"
+      >...</v-chip>
 
     <v-card-actions class="justify-center">
       <v-btn variant="flat" rounded="xl" class="text-white w-100" @click="goToDetail">

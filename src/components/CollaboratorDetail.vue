@@ -49,9 +49,9 @@ function onScroll() {
     <v-icon icon="$location"></v-icon> {{ collaborator.office.name }} -
     {{ collaborator.seniority }}
     <br />
-    <span v-if="collaborator.isAvailable"
-      >Disponible à partir du {{ dateFormatted }}</span
-    >
+    <span v-if="!collaborator.isAvailable"
+      >Disponible à partir du {{ dateFormatted }}</span>
+    <span v-else>Disponilbe immédiatement</span>  
   </span>
   <div class="mt-4">
     <p>Compétences :</p>

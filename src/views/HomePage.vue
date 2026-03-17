@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 class="text-center mb-6">Rechercher un talent :</h1>
+  <h1 class="text-center mb-6">Rechercher un consultant :</h1>
   <CollaboratorFilters />
   <div class="d-flex justify-center mt-4 pt-4">
     <v-btn
@@ -24,7 +24,7 @@ onMounted(() => {
       color="primary"
       class="mt-4"
     >
-      Voir tous les talents
+      Voir tous les consultants
     </v-btn>
   </div>
 </template>
