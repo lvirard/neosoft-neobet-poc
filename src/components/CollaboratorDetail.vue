@@ -31,7 +31,7 @@ const dateFormatted = date.format(
     <br />
     <span v-if="!collaborator.isAvailable"
       >Disponible à partir du {{ dateFormatted }}</span>
-    <span v-else>Disponilbe immédiatement</span>  
+    <span v-else>Disponible immédiatement</span>  
   </span>
 
   <CollaboratorSkills :collaborator />
