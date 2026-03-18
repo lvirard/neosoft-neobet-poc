@@ -35,9 +35,7 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
           ...p.skills,
           ...p.experiences.map((e) => e.name),
           ...p.experiences.map((e) => e.description),
-        ].some((field) =>
-          field?.toLowerCase().includes(searchString),
-        );
+        ].some((field) => field?.toLowerCase().includes(searchString));
 
       const matchTitle =
         !filters.value.title || p.title === filters.value.title;
@@ -76,14 +74,25 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
   }
 
   function addToFavorites(collaborator: Collaborator) {
-    if (!favoriteCollaborators.value.some(c => c.id === collaborator.id)) {
+    if (!favoriteCollaborators.value.some((c) => c.id === collaborator.id)) {
       favoriteCollaborators.value.push(collaborator);
     }
   }
 
   function removeFromFavorites(collaborator: Collaborator) {
-    favoriteCollaborators.value = favoriteCollaborators.value.filter(c => c.id !== collaborator.id);
+    favoriteCollaborators.value = favoriteCollaborators.value.filter(
+      (c) => c.id !== collaborator.id,
+    );
   }
 
-  return { allCollaborators, filters, filteredCollaborators, setFilter, resetFilters, favoriteCollaborators, addToFavorites, removeFromFavorites }
-})
+  return {
+    allCollaborators,
+    filters,
+    filteredCollaborators,
+    setFilter,
+    resetFilters,
+    favoriteCollaborators,
+    addToFavorites,
+    removeFromFavorites,
+  };
+});

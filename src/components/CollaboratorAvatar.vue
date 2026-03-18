@@ -14,7 +14,9 @@ const props = defineProps({
 });
 
 const hasImage = computed(() => !!props.collaborator.document?.image);
-const imageUrl = computed(() => (hasImage.value ? `/img/${props.collaborator.document.image}` : ""));
+const imageUrl = computed(() =>
+  hasImage.value ? `/img/${props.collaborator.document.image}` : "",
+);
 const initials = computed(() => {
   const { name, surname } = props.collaborator;
   return `${name?.[0] ?? ""}${surname?.[0] ?? ""}`.toUpperCase();

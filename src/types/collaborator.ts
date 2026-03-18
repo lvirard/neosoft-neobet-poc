@@ -1,7 +1,7 @@
 import { Experience } from "./experience";
 
 export class Collaborator {
-  id:number;
+  id: number;
   name: string;
   surname: string;
   title: string;
@@ -17,7 +17,7 @@ export class Collaborator {
   office: { name: string };
 
   constructor(
-    id:number,
+    id: number,
     name: string,
     surname: string,
     title: string,

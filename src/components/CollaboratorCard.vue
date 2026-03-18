@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, PropType } from "vue";
-import { useCollaboratorStore} from "@/stores/collaboratorsListStore";
+import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import { Collaborator } from "@/types/collaborator";
 import CollaboratorAvatar from "@/components/CollaboratorAvatar.vue";
 import CollaboratorSkills from "./CollaboratorSkills.vue";
@@ -15,22 +15,25 @@ const props = defineProps({
 });
 
 const collaboratorStore = useCollaboratorStore();
-const { getCollaboratorDetailRoute, goToCollaboratorDetail } = useCollaboratorNavigation();
+const { getCollaboratorDetailRoute, goToCollaboratorDetail } =
+  useCollaboratorNavigation();
 
 const { formatAvailabilityDate } = useCollaboratorDate();
-const dateFormatted = formatAvailabilityDate(props.collaborator.startAvailability);
+const dateFormatted = formatAvailabilityDate(
+  props.collaborator.startAvailability,
+);
 
 const isStarred = computed(() =>
   collaboratorStore.favoriteCollaborators.some(
-    c => c.id === props.collaborator.id
-  )
+    (c) => c.id === props.collaborator.id,
+  ),
 );
 
 function toggleStar() {
   if (isStarred.value) {
-    collaboratorStore.removeFromFavorites(props.collaborator)
+    collaboratorStore.removeFromFavorites(props.collaborator);
   } else {
-    collaboratorStore.addToFavorites(props.collaborator)
+    collaboratorStore.addToFavorites(props.collaborator);
   }
 }
 
@@ -41,10 +44,10 @@ function goToDetail() {
 
 <template>
   <v-card
-  rounded="lg"
-  class="mb-4 pa-4"
-  :to="getCollaboratorDetailRoute(collaborator)"
->
+    rounded="lg"
+    class="mb-4 pa-4"
+    :to="getCollaboratorDetailRoute(collaborator)"
+  >
     <v-card-title>
       <CollaboratorAvatar :collaborator="collaborator" />
       <v-btn icon="" variant="text" @click="toggleStar">
@@ -67,7 +70,12 @@ function goToDetail() {
     <CollaboratorSkills :collaborator :skills-number="3" />
 
     <v-card-actions class="justify-center">
-      <v-btn variant="flat" rounded="xl" class="text-white w-100" @click="goToDetail">
+      <v-btn
+        variant="flat"
+        rounded="xl"
+        class="text-white w-100"
+        @click="goToDetail"
+      >
         <template v-slot:prepend><v-icon icon="$magnify"></v-icon> </template>
         Voir plus
       </v-btn>

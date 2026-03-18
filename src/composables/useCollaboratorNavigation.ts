@@ -4,7 +4,9 @@ import type { Collaborator } from "@/types/collaborator";
 export function useCollaboratorNavigation() {
   const router = useRouter();
 
-  function getCollaboratorDetailRoute(collaborator: Collaborator): RouteLocationRaw {
+  function getCollaboratorDetailRoute(
+    collaborator: Collaborator,
+  ): RouteLocationRaw {
     return {
       name: "detail",
       params: { name: collaborator.name },

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Collaborator } from '@/types/collaborator';
-import { PropType } from 'vue';
+import { Collaborator } from "@/types/collaborator";
+import { PropType } from "vue";
 
 const props = defineProps({
   collaborator: {
@@ -15,8 +15,10 @@ const props = defineProps({
 });
 
 // 0 skillNumber means all the array
-const skills = props.skillsNumber > 0 ? props.collaborator.skills.slice(0,props.skillsNumber) : props.collaborator.skills;
-
+const skills =
+  props.skillsNumber > 0
+    ? props.collaborator.skills.slice(0, props.skillsNumber)
+    : props.collaborator.skills;
 </script>
 
 <template>
@@ -27,7 +29,9 @@ const skills = props.skillsNumber > 0 ? props.collaborator.skills.slice(0,props.
       :skill
       :key="skill"
       :color="
-        $vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'
+        $vuetify.theme.current.dark
+          ? 'var(--neo-light-blue)'
+          : 'var(--neo-dark-blue)'
       "
       variant="outlined"
       class="mb-1 ms-1"
@@ -36,9 +40,14 @@ const skills = props.skillsNumber > 0 ? props.collaborator.skills.slice(0,props.
     </v-chip>
     <v-chip
       v-if="skillsNumber > 0"
-      :color="$vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'"
+      :color="
+        $vuetify.theme.current.dark
+          ? 'var(--neo-light-blue)'
+          : 'var(--neo-dark-blue)'
+      "
       variant="outlined"
       class="mb-1 ms-1"
-      >...</v-chip>
+      >...
+    </v-chip>
   </div>
 </template>

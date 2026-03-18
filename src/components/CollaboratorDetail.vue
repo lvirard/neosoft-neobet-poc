@@ -18,20 +18,20 @@ const dateFormatted = date.format(
   props.collaborator.startAvailability,
   "fullDate",
 );
-
 </script>
 
 <template>
   <h3>
-  <CollaboratorAvatar :collaborator />
+    <CollaboratorAvatar :collaborator />
   </h3>
   <span class="text-grey">
     <v-icon icon="$location"></v-icon> {{ collaborator.office.name }} -
     {{ collaborator.seniority }}
     <br />
-    <span v-if="!collaborator.isAvailable"
-      >Disponible à partir du {{ dateFormatted }}</span>
-    <span v-else>Disponible immédiatement</span>  
+    <span v-if="!collaborator.isAvailable">
+      Disponible à partir du {{ dateFormatted }}
+    </span>
+    <span v-else>Disponible immédiatement</span>
   </span>
 
   <CollaboratorSkills :collaborator />

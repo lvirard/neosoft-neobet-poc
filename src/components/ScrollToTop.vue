@@ -11,7 +11,7 @@ function onScroll() {
 </script>
 
 <template>
-    <v-fab
+  <v-fab
     v-model="model"
     app
     icon="$chevronUp"

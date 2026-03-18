@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import { JobRepository } from "@/types/JobRepository";
-import { officeOptions, seniorityOptions, titleOptions } from "@/data/filterOptions";
+import {
+  officeOptions,
+  seniorityOptions,
+  titleOptions,
+} from "@/data/filterOptions";
 
 const store = useCollaboratorStore();
 
