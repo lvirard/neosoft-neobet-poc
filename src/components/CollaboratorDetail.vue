@@ -1,49 +1,29 @@
 <script setup lang="ts">
-import { useGoTo, useDate } from "vuetify";
-import { shallowRef } from "vue";
+import { useDate } from "vuetify";
+import ScrollToTop from "./ScrollToTop.vue";
+import CollaboratorAvatar from "./CollaboratorAvatar.vue";
+import { Collaborator } from "@/types/collaborator";
+import { PropType } from "vue";
+import CollaboratorSkills from "./CollaboratorSkills.vue";
 
 const props = defineProps({
   collaborator: {
-    type: Object,
+    type: Object as PropType<Collaborator>,
     required: true,
   },
 });
 
-const goTo = useGoTo({ layout: true });
 const date = useDate();
 const dateFormatted = date.format(
   props.collaborator.startAvailability,
   "fullDate",
 );
-const model = shallowRef(false);
 
-function onScroll() {
-  model.value = window.scrollY > 200;
-}
 </script>
 
 <template>
   <h3>
-    <v-avatar
-      color="var(--neo-dark-blue)"
-      :badge="{ color: collaborator.isAvailable ? 'green' : 'red' }"
-    >
-      <template v-slot:badge>
-        <v-icon
-          :icon="
-            collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'
-          "
-        ></v-icon>
-      </template>
-      <v-img
-        v-if="collaborator.document.image"
-        :src="'/img/' + collaborator.document.image"
-      ></v-img>
-      <span v-else class="text-headline-small text-white">
-        {{ collaborator.name[0] }}{{ collaborator.surname[0] }}
-      </span>
-    </v-avatar>
-    {{ collaborator.surname }}
+  <CollaboratorAvatar :collaborator />
   </h3>
   <span class="text-grey">
     <v-icon icon="$location"></v-icon> {{ collaborator.office.name }} -
@@ -53,23 +33,8 @@ function onScroll() {
       >Disponible à partir du {{ dateFormatted }}</span>
     <span v-else>Disponilbe immédiatement</span>  
   </span>
-  <div class="mt-4">
-    <p>Compétences :</p>
-    <v-chip
-      v-for="skill in collaborator.skills"
-      :skill
-      :key="skill"
-      :color="
-        $vuetify.theme.current.dark
-          ? 'var(--neo-light-blue)'
-          : 'var(--neo-dark-blue)'
-      "
-      variant="outlined"
-      class="mb-1 ms-1"
-    >
-      {{ skill }}
-    </v-chip>
-  </div>
+
+  <CollaboratorSkills :collaborator />
 
   <p>Expériences :</p>
   <v-list-item
@@ -88,13 +53,7 @@ function onScroll() {
       Contacter le commercial
     </a>
   </v-fab>
-  <v-fab
-    v-model="model"
-    app
-    icon="$chevronUp"
-    @click="goTo(0)"
-    v-scroll="onScroll"
-  ></v-fab>
+  <ScrollToTop></ScrollToTop>
 </template>
 
 <style scoped>

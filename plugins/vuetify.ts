@@ -13,6 +13,7 @@ export default createVuetify({
     },
     locale: {
         locale: 'fr',
+        fallback: 'en',
     },
     date: {
         locale: {

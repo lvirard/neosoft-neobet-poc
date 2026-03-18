@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import { JobRepository } from "@/types/JobRepository";
+import { officeOptions, seniorityOptions, titleOptions } from "@/data/filterOptions";
+
 const store = useCollaboratorStore();
-const titleOptions = Object.values(JobRepository);
-const officeOptions = ["Brest", "Rennes", "Paris"];
-const seniorityOptions = ["Débutant", "Confirmé", "Senior"];
 
 function onTitleChange(value: string | null) {
   store.setFilter("title", value as JobRepository | undefined);

@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { computed, PropType } from "vue";
-import { useRouter } from "vue-router";
 import { useCollaboratorStore} from "@/stores/collaboratorsListStore";
 import { Collaborator } from "@/types/collaborator";
+import CollaboratorAvatar from "@/components/CollaboratorAvatar.vue";
+import CollaboratorSkills from "./CollaboratorSkills.vue";
+import { useCollaboratorNavigation } from "@/composables/useCollaboratorNavigation";
+import { useCollaboratorDate } from "@/composables/useCollaboratorDate";
 
 const props = defineProps({
   collaborator: {
@@ -11,10 +14,11 @@ const props = defineProps({
   },
 });
 
-const router = useRouter();
 const collaboratorStore = useCollaboratorStore();
+const { getCollaboratorDetailRoute, goToCollaboratorDetail } = useCollaboratorNavigation();
 
-const skills = props.collaborator.skills.slice(0,3);
+const { formatAvailabilityDate } = useCollaboratorDate();
+const dateFormatted = formatAvailabilityDate(props.collaborator.startAvailability);
 
 const isStarred = computed(() =>
   collaboratorStore.favoriteCollaborators.some(
@@ -31,36 +35,18 @@ function toggleStar() {
 }
 
 function goToDetail() {
-  router.push({
-    path: "detail/" + props.collaborator.name,
-  });
+  goToCollaboratorDetail(props.collaborator);
 }
 </script>
 
 <template>
-  <v-card rounded="lg" class="mb-4 pa-4">
+  <v-card
+  rounded="lg"
+  class="mb-4 pa-4"
+  :to="getCollaboratorDetailRoute(collaborator)"
+>
     <v-card-title>
-      <v-avatar
-        color="var(--neo-dark-blue)"
-        :badge="{ color: collaborator.isAvailable ? 'green' : 'red' }"
-      >
-        <template v-slot:badge>
-          <v-icon
-            :icon="
-              collaborator.isAvailable ? '$calendarCheck' : '$calendarRemove'
-            "
-          ></v-icon>
-        </template>
-        <v-img
-          v-if="collaborator.document.image"
-          :src="'/img/' + collaborator.document.image"
-        ></v-img>
-        <span v-else class="text-headline-small text-white">
-          {{ collaborator.name[0] }}{{ collaborator.surname[0] }}
-        </span>
-      </v-avatar>
-      {{ collaborator.surname }}
-
+      <CollaboratorAvatar :collaborator="collaborator" />
       <v-btn icon="" variant="text" @click="toggleStar">
         <v-icon :icon="isStarred ? '$star' : '$starOutline'" />
       </v-btn>
@@ -70,26 +56,15 @@ function goToDetail() {
     <v-card-subtitle>
       <v-icon icon="$location"></v-icon>
       {{ collaborator.office.name }} -
-      {{ collaborator.isAvailable ? "Disponible" : "Indisponible" }}
+      <span v-if="!collaborator.isAvailable">
+        Disponible à partir du {{ dateFormatted }}
+      </span>
+      <span v-else>Disponilbe immédiatement</span>
     </v-card-subtitle>
 
     <v-card-text>{{ collaborator.highlight }}</v-card-text>
 
-    <v-chip
-      v-for="skill in skills"
-      :skill
-      :key="skill"
-      :color="$vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'"
-      variant="outlined"
-      class="mb-1 ms-1"
-    >
-      {{ skill }}
-    </v-chip>
-    <v-chip
-      :color="$vuetify.theme.current.dark ? 'var(--neo-light-blue)' : 'var(--neo-dark-blue)'"
-      variant="outlined"
-      class="mb-1 ms-1"
-      >...</v-chip>
+    <CollaboratorSkills :collaborator :skills-number="3" />
 
     <v-card-actions class="justify-center">
       <v-btn variant="flat" rounded="xl" class="text-white w-100" @click="goToDetail">

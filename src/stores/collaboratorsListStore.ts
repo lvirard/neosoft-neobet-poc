@@ -22,10 +22,12 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
 
   // La liste filtrée des collaborateurs, calculée à partir de la liste complète et des filtres
   const filteredCollaborators = computed(() => {
+    const searchString = (filters.value.search ?? "").toLowerCase();
+
     return allCollaborators.value.filter((p) => {
       //recherche dans les champs name, surname, highlight, skills et expériences (name et description)
       const matchSearch =
-        !filters.value.search.toLowerCase() ||
+        !searchString ||
         [
           p.name,
           p.surname,
@@ -34,7 +36,7 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
           ...p.experiences.map((e) => e.name),
           ...p.experiences.map((e) => e.description),
         ].some((field) =>
-          field?.toLowerCase().includes(filters.value.search.toLowerCase()),
+          field?.toLowerCase().includes(searchString),
         );
 
       const matchTitle =
