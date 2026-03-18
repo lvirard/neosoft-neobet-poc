@@ -59,7 +59,7 @@ function goToDetail() {
       <span v-if="!collaborator.isAvailable">
         Disponible à partir du {{ dateFormatted }}
       </span>
-      <span v-else>Disponilbe immédiatement</span>
+      <span v-else>Disponible immédiatement</span>
     </v-card-subtitle>
 
     <v-card-text>{{ collaborator.highlight }}</v-card-text>
