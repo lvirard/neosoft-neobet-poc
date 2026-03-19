@@ -9,10 +9,17 @@ const store = useCollaboratorStore();
 
 <template>
   <CollaboratorFilters />
-  <CollaboratorCard
-    v-for="collaborator in store.filteredCollaborators"
-    :collaborator
-    :key="collaborator.id"
-  />
+  <v-row>
+    <v-col
+      v-for="collaborator in store.filteredCollaborators"
+      :collaborator
+      :key="collaborator.id"
+      cols="12"
+      md="4"
+    >
+      <CollaboratorCard :collaborator />
+    </v-col>
+  </v-row>
+
   <ScrollToTop></ScrollToTop>
 </template>

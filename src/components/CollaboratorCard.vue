@@ -45,7 +45,7 @@ function goToDetail() {
 <template>
   <v-card
     rounded="lg"
-    class="mb-4 pa-4"
+    class="collaborator-card h-100"
     :to="getCollaboratorDetailRoute(collaborator)"
   >
     <v-card-title>
@@ -65,11 +65,11 @@ function goToDetail() {
       <span v-else>Disponible immédiatement</span>
     </v-card-subtitle>
 
-    <v-card-text>{{ collaborator.highlight }}</v-card-text>
+    <v-card-text class="card-content">{{ collaborator.highlight }}</v-card-text>
 
     <CollaboratorSkills :collaborator :skills-number="3" />
 
-    <v-card-actions class="justify-center">
+    <v-card-actions class="card-footer justify-center">
       <v-btn
         variant="flat"
         rounded="xl"
@@ -101,5 +101,18 @@ function goToDetail() {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem;
+}
+.collaborator-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.collaborator-card .v-card-text.card-content {
+  flex: 1;
+}
+
+.collaborator-card .v-card-actions.card-footer {
+  margin-top: auto;
 }
 </style>

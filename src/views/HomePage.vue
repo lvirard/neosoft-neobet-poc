@@ -21,8 +21,8 @@ onMounted(() => {
       prepend-icon="$magnify"
       variant="elevated"
       @click="handleSearch"
-      color="primary"
       class="mt-4"
+      block
     >
       Voir tous les consultants
     </v-btn>
