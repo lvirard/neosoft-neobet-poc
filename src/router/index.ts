@@ -18,7 +18,7 @@ const router = createRouter({
       component: CollaboratorsListView,
     },
     {
-      path: "/detail/:name",
+      path: "/detail/:id",
       name: "detail",
       component: CollaboratorDetailView,
       props: true,

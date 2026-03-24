@@ -9,7 +9,7 @@ export function useCollaboratorNavigation() {
   ): RouteLocationRaw {
     return {
       name: "detail",
-      params: { name: collaborator.name },
+      params: { id: collaborator.id },
     };
   }
 

@@ -12,11 +12,11 @@ const route = useRoute();
 const router = useRouter();
 const store = useCollaboratorStore();
 
-// resolve the collaborator either from props or by looking up the name param/query
+// resolve the collaborator either from props or by looking up the id param/query
 const resolved = computed<Collaborator | undefined>(() => {
   if (props.collaborator) return props.collaborator;
-  const name = String(route.params.name || route.query.name || "");
-  return store.allCollaborators.find((c) => c.name === name);
+  const id = Number(route.params.id || route.query.id || "");
+  return store.allCollaborators.find((c) => c.id === id);
 });
 
 // if none could be found, redirect back to the list after the current tick
