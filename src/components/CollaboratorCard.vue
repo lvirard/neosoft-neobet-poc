@@ -65,7 +65,9 @@ function goToDetail() {
       <span v-else>Disponible immédiatement</span>
     </v-card-subtitle>
 
-    <CollaboratorSkills :collaborator :skills-number="3" />
+    <v-card-item>
+      <CollaboratorSkills :collaborator :skills-number="3" />
+    </v-card-item>
 
     <v-card-actions class="card-footer justify-center">
       <v-btn

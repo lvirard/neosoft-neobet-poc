@@ -10,6 +10,10 @@ const store = useCollaboratorStore();
 <template>
   <CollaboratorFilters />
   <v-row>
+    <span v-if="store.filteredCollaborators.length === 0">
+      Actuellement aucun de nos consultants ne répond à votre recherche. 
+      <v-btn href="tel:0647237948" block class="mt-4">Discutons-en</v-btn>
+      </span>
     <v-col
       v-for="collaborator in store.filteredCollaborators"
       :collaborator
