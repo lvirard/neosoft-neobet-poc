@@ -14,10 +14,7 @@ const props = defineProps({
 });
 
 const date = useDate();
-const dateFormatted = date.format(
-  props.collaborator.startAvailability,
-  "fullDate",
-);
+const dateFormatted = date.format(props.collaborator.startAvailability, "fullDate");
 </script>
 
 <template>
@@ -35,6 +32,9 @@ const dateFormatted = date.format(
   </span>
 
   <CollaboratorSkills :collaborator />
+
+  <p>Résumé :</p>
+  <v-card-text class="card-content">{{ collaborator.highlight }}</v-card-text>
 
   <p>Expériences :</p>
   <v-list-item

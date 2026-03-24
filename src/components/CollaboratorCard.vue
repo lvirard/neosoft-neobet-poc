@@ -65,8 +65,6 @@ function goToDetail() {
       <span v-else>Disponible immédiatement</span>
     </v-card-subtitle>
 
-    <v-card-text class="card-content">{{ collaborator.highlight }}</v-card-text>
-
     <CollaboratorSkills :collaborator :skills-number="3" />
 
     <v-card-actions class="card-footer justify-center">
