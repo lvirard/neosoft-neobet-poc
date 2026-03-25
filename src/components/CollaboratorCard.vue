@@ -49,7 +49,7 @@ function goToDetail() {
     :to="getCollaboratorDetailRoute(collaborator)"
   >
     <v-card-title>
-      <CollaboratorAvatar :collaborator="collaborator" />
+      <CollaboratorAvatar :collaborator="collaborator" :to="getCollaboratorDetailRoute(collaborator)"/>
       <v-btn icon="" variant="text" @click="toggleStar">
         <v-icon :icon="isStarred ? '$star' : '$starOutline'" />
       </v-btn>
