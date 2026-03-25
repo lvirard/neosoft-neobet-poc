@@ -42,3 +42,18 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+### Publi sur GitHub Pages
+```sh
+#Ajout github 
+git remote add github https://github.com/lvirard/neosoft-neobet-poc.git
+#créer branche dédiée
+git checkout -b gh-pages
+#Ajout pipeline + racine dans vite.config.ts
+base: '/neosoft-neobet-poc/'
+#faire de "vue-project" la racine de la branche
+git subtree split --prefix=vue-project -b deploy-vue
+#push
+git push github deploy-vue:main
+```
