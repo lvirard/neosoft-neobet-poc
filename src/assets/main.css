@@ -7,7 +7,22 @@
   font-weight: normal;
 }
 
+/* Mobile portrait */
+@media (max-width: 600px) {
+  #app {
+    padding: 0.5rem; /* réduit les marges latérales */
+  }
+}
+
+/* Tablette / desktop */
 @media (min-width: 1024px) {
+  #app {
+    max-width: 1000px; /* limite la largeur */
+    padding: 2rem;
+  }
+}
+
+/* @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
@@ -17,4 +32,4 @@
     padding: 0 2rem;
     min-height: 100vh;
   }
-}
+} */

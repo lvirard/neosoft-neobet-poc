@@ -14,17 +14,19 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 class="text-center mb-6">Rechercher un consultant :</h1>
-  <CollaboratorFilters />
-  <div class="d-flex justify-center mt-4 pt-4">
-    <v-btn
-      prepend-icon="$magnify"
-      variant="elevated"
-      @click="handleSearch"
-      class="mt-4"
-      block
-    >
-      Voir tous les consultants
-    </v-btn>
+  <div class="home-page pa-6 mx-auto">
+    <h1 class="mb-6 title-search">Trouvez le bon consultant pour réaliser vos projets !</h1>
+    <CollaboratorFilters />
   </div>
 </template>
+
+<style>
+.title-search {
+  font-weight: 600; /* ou 700 si tu veux plus fort */
+}
+
+.home-page {
+  max-width: 600px;
+}
+
+</style>

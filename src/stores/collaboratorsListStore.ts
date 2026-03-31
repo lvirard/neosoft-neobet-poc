@@ -15,7 +15,7 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
     title: undefined,
     office: undefined,
     seniority: undefined,
-    isAvailable: undefined,
+    availability: undefined,
   });
 
   const favoriteCollaborators = ref<Collaborator[]>([]);
@@ -46,15 +46,20 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
       const matchSeniority =
         !filters.value.seniority || p.seniority === filters.value.seniority;
 
-      const matchIsAvailable =
-        !filters.value.isAvailable || p.isAvailable === true;
+      const matchAvailability =
+        !filters.value.availability ||
+        (filters.value.availability === "immediate" &&
+          p.availability === "immediate") ||
+        (filters.value.availability === "soon" &&
+          ["immediate", "soon"].includes(p.availability));
+
 
       return (
         matchSearch &&
         matchTitle &&
         matchOffice &&
         matchSeniority &&
-        matchIsAvailable
+        matchAvailability
       );
     });
   });
@@ -69,7 +74,7 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
       title: undefined,
       office: undefined,
       seniority: undefined,
-      isAvailable: undefined,
+      availability: undefined,
     };
   }
 

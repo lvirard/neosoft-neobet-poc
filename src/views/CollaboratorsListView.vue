@@ -5,6 +5,7 @@ import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import ScrollToTop from "@/components/ScrollToTop.vue";
 
 const store = useCollaboratorStore();
+
 </script>
 
 <template>

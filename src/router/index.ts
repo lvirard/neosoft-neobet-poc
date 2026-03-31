@@ -29,6 +29,30 @@ const router = createRouter({
       component: FavoritesCollaboratorsListView,
       props: true,
     },
+    {
+      path: "/login",
+      name: "login",
+      component: Home,
+      props: true,
+    },
+    {
+      path: "/logout",
+      name: "logout",
+      component: Home,
+      props: true,
+    },
+    {
+      path: "/register",
+      name: "register",
+      component: Home,
+      props: true,
+    },
+    {
+      path: "/account",
+      name: "account",
+      component: Home,
+      props: true,
+    },
   ],
   scrollBehavior() {
     return new Promise((resolve) => {

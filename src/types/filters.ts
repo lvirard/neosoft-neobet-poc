@@ -5,19 +5,19 @@ export class Filters {
   title?: JobRepository;
   office?: string;
   seniority?: string;
-  isAvailable?: boolean;
+  availability?: string;
 
   constructor(
     search: string,
     title: JobRepository,
     office: string,
     seniority: string,
-    isAvailable: boolean,
+    availability: string,
   ) {
     this.search = search;
     this.title = title;
     this.office = office;
     this.seniority = seniority;
-    this.isAvailable = isAvailable;
+    this.availability = availability;
   }
 }
