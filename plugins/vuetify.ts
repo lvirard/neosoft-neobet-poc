@@ -2,7 +2,7 @@
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
-import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline, mdiCheck, mdiPhone, mdiCalendarCheck, mdiCalendarRemove, mdiEyeOff, mdiLock, mdiEye, mdiEmail, mdiDelete, mdiFilter, mdiFilterOutline } from '@mdi/js'
+import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline, mdiCheck, mdiPhone, mdiCalendarCheck, mdiCalendarRemove, mdiEyeOff, mdiLock, mdiEye, mdiEmail, mdiDelete, mdiFilterOutline } from '@mdi/js'
 
 export default createVuetify({
     defaults: {

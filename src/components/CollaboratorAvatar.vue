@@ -17,7 +17,7 @@ const props = defineProps({
 
 const hasImage = computed(() => !!props.collaborator.document?.image);
 const imageUrl = computed(() =>
-  hasImage.value ? `/img/${props.collaborator.document.image}` : ""
+  hasImage.value ? `/img/${props.collaborator.document.image}` : "",
 );
 const initials = computed(() => {
   const { name, surname } = props.collaborator;
@@ -25,11 +25,13 @@ const initials = computed(() => {
 });
 
 const statusIcon = computed(() =>
-  props.collaborator.isAvailable ? "$calendarCheck" : "$calendarRemove"
+  props.collaborator.isAvailable ? "$calendarCheck" : "$calendarRemove",
 );
 
 const { getMonthsToAvailability } = useCollaboratorDate();
-const dateFormatted = getMonthsToAvailability(props.collaborator.startAvailability);
+const dateFormatted = getMonthsToAvailability(
+  props.collaborator.startAvailability,
+);
 
 const collaboratorStore = useCollaboratorStore();
 
@@ -51,16 +53,15 @@ function toggleStar() {
 <template>
   <v-row gap="0">
     <v-col cols="3">
-      <v-avatar
-        :color="'var(--neo-dark-blue)'"
-        :size="size"
-      >
+      <v-avatar :color="'var(--neo-dark-blue)'" :size="size">
         <template v-slot:badge>
           <v-icon :icon="statusIcon" />
         </template>
 
         <v-img v-if="hasImage" :src="imageUrl" />
-        <span v-else class="text-headline-small text-white">{{ initials }}</span>
+        <span v-else class="text-headline-small text-white">{{
+          initials
+        }}</span>
       </v-avatar>
     </v-col>
     <v-col cols="8">
@@ -70,13 +71,22 @@ function toggleStar() {
         <v-icon icon="$location"></v-icon> {{ collaborator.office.name }}
       </span>
       <br />
-      <v-chip variant="outlined" color="orange" v-if="!collaborator.isAvailable">
+      <v-chip
+        variant="outlined"
+        color="orange"
+        v-if="!collaborator.isAvailable"
+      >
         Disponible dans {{ dateFormatted }}
       </v-chip>
       <v-chip variant="outlined" color="success" v-else>Disponible</v-chip>
     </v-col>
     <v-col cols="1">
-      <v-btn icon="" variant="text" @click.prevent="toggleStar" class="align-center">
+      <v-btn
+        icon=""
+        variant="text"
+        @click.prevent="toggleStar"
+        class="align-center"
+      >
         <v-icon :icon="isStarred ? '$star' : '$starOutline'" />
       </v-btn>
     </v-col>
