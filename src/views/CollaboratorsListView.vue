@@ -3,19 +3,20 @@ import CollaboratorFilters from "@/components/CollaboratorFilters.vue";
 import CollaboratorCard from "@/components/CollaboratorCard.vue";
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import ScrollToTop from "@/components/ScrollToTop.vue";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 const menu = ref(false);
 const store = useCollaboratorStore();
-const numberOfAvailableCollaborators = store.getNumberOfAvailableCollaborators;
 </script>
 
 <template>
   <v-row>
     <v-col cols="9">
-      <p>{{ numberOfAvailableCollaborators }} consultants disponibles</p>
+      <p>
+        {{ store.getNumberOfAvailableCollaborators }} consultants disponibles
+      </p>
     </v-col>
-    <v-col>
+    <v-col class="d-flex justify-end">
       <v-menu v-model="menu" :close-on-content-click="false">
         <template v-slot:activator="{ props }">
           <v-btn icon="$filter" variant="plain" v-bind="props"></v-btn>
