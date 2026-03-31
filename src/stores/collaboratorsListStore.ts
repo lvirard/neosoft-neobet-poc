@@ -65,8 +65,7 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
   });
 
   const getNumberOfAvailableCollaborators = computed(() => {
-    return filteredCollaborators.value.filter((e) => e.isAvailable === true)
-      .length;
+    return filteredCollaborators.value.length;
   });
 
   function setFilter<K extends keyof Filters>(key: K, value: Filters[K]) {

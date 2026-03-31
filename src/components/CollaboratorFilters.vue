@@ -87,7 +87,7 @@ function onTitleChange(value: string | null) {
         <v-text-field
           :model-value="store.filters.search"
           @update:model-value="store.setFilter('search', $event)"
-          label="Rechercher par mots clés"
+          label="Mots clés"
           clearable
           density="comfortable"
           hide-details
@@ -127,7 +127,8 @@ function onTitleChange(value: string | null) {
 <style>
 .search-card {
   border-radius: 24px;
-  background-color: #f5f5f5; /* ou var si tu veux */
+  background-color: var(--vt-c-white-soft); 
+  min-width: 220px;
 }
 
 .search-btn {

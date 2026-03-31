@@ -24,10 +24,6 @@ const initials = computed(() => {
   return `${name?.[0] ?? ""}${surname?.[0] ?? ""}`.toUpperCase();
 });
 
-const statusIcon = computed(() =>
-  props.collaborator.isAvailable ? "$calendarCheck" : "$calendarRemove",
-);
-
 const { getMonthsToAvailability } = useCollaboratorDate();
 const dateFormatted = getMonthsToAvailability(
   props.collaborator.startAvailability,
@@ -51,44 +47,103 @@ function toggleStar() {
 </script>
 
 <template>
-  <v-row gap="0">
-    <v-col cols="3">
-      <v-avatar :color="'var(--neo-dark-blue)'" :size="size">
-        <template v-slot:badge>
-          <v-icon :icon="statusIcon" />
-        </template>
-
+  <v-row align="center" no-gutters>
+    <v-col cols="3" class="d-flex justify-center">
+      <v-avatar :color="'var(--neo-dark-blue)'" :size="size" class="avatar">
         <v-img v-if="hasImage" :src="imageUrl" />
         <span v-else class="text-headline-small text-white">{{
           initials
         }}</span>
       </v-avatar>
     </v-col>
-    <v-col cols="8">
-      {{ collaborator.surname }}
-      <br />
-      <span class="text-grey">
-        <v-icon icon="$location"></v-icon> {{ collaborator.office.name }}
-      </span>
-      <br />
-      <v-chip
-        variant="outlined"
-        color="orange"
-        v-if="!collaborator.isAvailable"
-      >
-        Disponible dans {{ dateFormatted }}
-      </v-chip>
-      <v-chip variant="outlined" color="success" v-else>Disponible</v-chip>
+
+    <v-col cols="8" class="d-flex flex-column justify-center">
+      <div class="name">
+        {{ collaborator.surname }}
+      </div>
+
+      <div class="location">
+        <v-icon size="14" class="mr-1">$location</v-icon>
+        {{ collaborator.office.name }}
+      </div>
+
+      <div class="chips">
+        <v-chip
+          size="small"
+          variant="outlined"
+          class="chip"
+          color="orange"
+          v-if="collaborator.availability === 'soon' "
+        >
+          Bientôt disponible
+        </v-chip>
+        <v-chip 
+          size="small"
+          variant="outlined" 
+          class="chip"
+          color="success" 
+          v-else-if="collaborator.availability === 'immediate'"
+        >
+          Disponible
+        </v-chip>
+        <v-chip 
+          size="small"
+          variant="outlined" 
+          class="chip"
+          color="error" 
+          v-else
+        >
+          Indisponible
+        </v-chip>
+      </div>
     </v-col>
-    <v-col cols="1">
+    <v-col cols="1" class="d-flex justify-end align-self-start">
       <v-btn
-        icon=""
         variant="text"
         @click.prevent="toggleStar"
-        class="align-center"
       >
-        <v-icon :icon="isStarred ? '$star' : '$starOutline'" />
+        <v-icon :icon="isStarred ? '$heart' : '$heartOutline'" />
       </v-btn>
     </v-col>
   </v-row>
 </template>
+
+<style>
+
+.avatar {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.location {
+  font-size: 13px;
+  color: #9e9e9e;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chip {
+  font-size: 12px;
+  height: 24px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+
+
+</style>

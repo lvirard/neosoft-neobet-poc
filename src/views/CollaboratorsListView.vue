@@ -3,7 +3,7 @@ import CollaboratorFilters from "@/components/CollaboratorFilters.vue";
 import CollaboratorCard from "@/components/CollaboratorCard.vue";
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import ScrollToTop from "@/components/ScrollToTop.vue";
-import { computed, ref } from "vue";
+import { ref } from "vue";
 
 const menu = ref(false);
 const store = useCollaboratorStore();
@@ -14,7 +14,7 @@ const store = useCollaboratorStore();
   <v-row>
     <v-col cols="9">
       <p>
-        {{ store.getNumberOfAvailableCollaborators }} consultants disponibles
+        {{ store.getNumberOfAvailableCollaborators }} consultants trouvés
       </p>
     </v-col>
     <v-col class="d-flex justify-end">
@@ -30,7 +30,7 @@ const store = useCollaboratorStore();
   <v-row>
     <span v-if="store.filteredCollaborators.length === 0">
       Actuellement aucun de nos consultants ne répond à votre recherche.
-      <v-btn href="tel:0647237948" block class="mt-4">Discutons-en</v-btn>
+      <v-btn href="tel:0101010101" block class="mt-4">Discutons-en</v-btn>
     </span>
     <v-col
       v-for="collaborator in store.filteredCollaborators"
