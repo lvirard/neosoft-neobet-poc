@@ -2,8 +2,8 @@
   {
     "collaborator": {
       "id": 1,
-      "name": "VIRARD",
-      "surname": "Laetitia",
+      "name": "MARCHAND",
+      "surname": "Sophie",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Débutant",
       "isAvailable": true,
@@ -45,8 +45,8 @@
         "Travail collaboratif"
       ],
       "document": {
-        "miniDC": "260112_Laetitia_MiniDC.pptx",
-        "image": "laetitia.png"
+        "miniDC": "",
+        "image": "femme.png"
       },
       "office": {
         "name": "Brest"
@@ -56,8 +56,8 @@
   {
     "collaborator": {
       "id": 2,
-      "name": "BOENNEC",
-      "surname": "Olivier",
+      "name": "DUPONT",
+      "surname": "Thomas",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Expérimenté",
       "isAvailable": false,
@@ -93,7 +93,7 @@
         "Digital Workplace"
       ],
       "document": {
-        "miniDC": "251211_Olivier_MiniDC.pptx",
+        "miniDC": "",
         "image": "homme1.jpg"
       },
       "office": {
@@ -104,8 +104,8 @@
   {
     "collaborator": {
       "id": 3,
-      "name": "CABIOCH",
-      "surname": "Baptiste",
+      "name": "BENALI",
+      "surname": "Tariq",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Débutant",
       "isAvailable": false,
@@ -143,7 +143,7 @@
         "Backyou"
       ],
       "document": {
-        "miniDC": "251218_Baptiste_MiniDC.pptx",
+        "miniDC": "",
         "image": "homme2.png"
       },
       "office": {
@@ -154,8 +154,8 @@
   {
     "collaborator": {
       "id": 4,
-      "name": "CLAIREAUX",
-      "surname": "Jason",
+      "name": "BERNANRD",
+      "surname": "Nicolas",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Senior",
       "isAvailable": true,
@@ -187,7 +187,7 @@
         "Ecosystèmes Cloud"
       ],
       "document": {
-        "miniDC": "251218_Jason_MiniDC.pptx",
+        "miniDC": "",
         "image": "homme1.jpg"
       },
       "office": {
@@ -198,8 +198,8 @@
   {
     "collaborator": {
       "id": 5,
-      "name": "MORIN",
-      "surname": "Kévin",
+      "name": "ROUSSEAU",
+      "surname": "Antoine",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Senior",
       "isAvailable": true,
@@ -243,7 +243,7 @@
         "Kubernetes"
       ],
       "document": {
-        "miniDC": "251218_Kevin_MiniDC.pptx",
+        "miniDC": "",
         "image": "homme2.png"
       },
       "office": {
@@ -254,8 +254,8 @@
   {
     "collaborator": {
     "id": 6,
-      "name": "ROUGIS",
-      "surname": "Raphaël",
+      "name": "MENDOZA",
+      "surname": "Carlos",
       "title": "AGILITY_AND_COUNSEL",
       "seniority": "Débutant",
       "isAvailable": true,
@@ -287,7 +287,7 @@
         "Infrastructure IT et Cloud"
       ],
       "document": {
-        "miniDC": "251218_Raphael_MiniDC - Copie1.pptx",
+        "miniDC": "",
         "image": "homme1.jpg"
       },
       "office": {
@@ -298,19 +298,19 @@
   {
     "collaborator": {
       "id": 7,
-      "name": "PIEDNOIR",
-      "surname": "Amélie",
+      "name": "ASANTE",
+      "surname": "Kofi",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Senior",
       "isAvailable": true,
       "startAvailability": "2026-01-01",
       "createdAt": "2024-01-01",
       "updatedAt": "2024-01-01",
-      "highlight": "Cheffe de projets avec une solide expérience, j'interviens sur l'ensemble des étapes de la gestion de projets, de la définition des besoins au suivi de la mise en œuvre, en lien avec les équipes concernées.",
+      "highlight": "Chef de projets avec une solide expérience, j'interviens sur l'ensemble des étapes de la gestion de projets, de la définition des besoins au suivi de la mise en œuvre, en lien avec les équipes concernées.",
       "experiences": [
         {
           "name": "Pilotage d'un projet réglementaire pour une société de distribution",
-          "description": "Cheffe de projets pour l'application de la réforme de Dématérialisation des Factures. Pilotage et coordination du projet en lien avec les équipes Métiers et les équipes techniques. Analyse des impacts / Spécifications des uses cases, des évolutions et mapping du flux électronique. Animation des comités projets et comités de pilotage / Suivi des risques, des délais, des coûts et des livrables. Gestion d'un appel d'offres pour sélectionner la plateforme agréée (PA) nécessaire pour l'envoi des flux."
+          "description": "Chef de projets pour l'application de la réforme de Dématérialisation des Factures. Pilotage et coordination du projet en lien avec les équipes Métiers et les équipes techniques. Analyse des impacts / Spécifications des uses cases, des évolutions et mapping du flux électronique. Animation des comités projets et comités de pilotage / Suivi des risques, des délais, des coûts et des livrables. Gestion d'un appel d'offres pour sélectionner la plateforme agréée (PA) nécessaire pour l'envoi des flux."
         },
         {
           "name": "Responsable d'une équipe projets pour une banque en ligne",
@@ -322,7 +322,7 @@
         },
         {
           "name": "Pilotage de projets réglementaires pour une banque en ligne",
-          "description": "Cheffe de projets transverse en lien avec de nombreuses équipes et avec le Groupe. Pilotage des projets réglementaires DSP2 (Directive sur les services de paiement) et DDA (Directive sur la distribution des Assurances) en lien avec plusieurs directions. Elaboration de cahiers des charges, des plannings / Suivi des risques, des délais, des coûts. Pilotage des phases de recette et de mise en production."
+          "description": "Chef de projets transverse en lien avec de nombreuses équipes et avec le Groupe. Pilotage des projets réglementaires DSP2 (Directive sur les services de paiement) et DDA (Directive sur la distribution des Assurances) en lien avec plusieurs directions. Elaboration de cahiers des charges, des plannings / Suivi des risques, des délais, des coûts. Pilotage des phases de recette et de mise en production."
         },
         {
           "name": "Gestion de la relation client B2B bancaire",
@@ -339,7 +339,7 @@
       ],
       "document": {
         "miniDC": "251219_Amelie_MiniDC.pptx",
-        "image": "femme.png"
+        "image": "homme1.jpg"
       },
       "office": {
         "name": "Brest"
@@ -349,15 +349,15 @@
   {
     "collaborator": {
       "id": 8,
-      "name": "QUEMENEUR",
-      "surname": "Axel",
+      "name": "TANAKA",
+      "surname": "Yuki",
       "title": "CYBERSECURITY",
       "seniority": "Expérimenté",
       "isAvailable": true,
       "startAvailability": "2026-01-01",
       "createdAt": "2024-01-01",
       "updatedAt": "2024-01-01",
-      "highlight": "Consultant dans l'administration des systèmes et réseaux, j'accompagne les entreprises en apportent mon lot de compétences et en alliant rigueur, adaptabilité et polyvalence pour mener à bien chaque projet.",
+      "highlight": "Consultante dans l'administration des systèmes et réseaux, j'accompagne les entreprises en apportent mon lot de compétences et en alliant rigueur, adaptabilité et polyvalence pour mener à bien chaque projet.",
       "experiences": [
         {
           "name": "Expertise de niveau 3 sur un Bastion informatique d'une OIV",
@@ -384,8 +384,8 @@
         "Agile"
       ],
       "document": {
-        "miniDC": "260106_Axel_MiniDC.pptx",
-        "image": "homme1.jpg"
+        "miniDC": "",
+        "image": "femme.png"
       },
       "office": {
         "name": "Brest"
@@ -395,8 +395,8 @@
   {
     "collaborator": {
       "id": 9,
-      "name": "JEGOU DE LAZ",
-      "surname": "Bertrand",
+      "name": "PETIT",
+      "surname": "Alexandre",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Senior",
       "isAvailable": true,
@@ -428,7 +428,7 @@
         "Amélioration continue"
       ],
       "document": {
-        "miniDC": "260123_Bertrand_MiniDC.pptx",
+        "miniDC": "",
         "image": "homme2.png"
       },
       "office": {
@@ -439,8 +439,8 @@
   {
     "collaborator": {
       "id": 10,
-      "name": "LUDOVIC",
-      "surname": "Ludovic",
+      "name": "FONTAINE",
+      "surname": "Isabelle",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Senior",
       "isAvailable": true,
@@ -451,11 +451,11 @@
       "experiences": [
         {
           "name": "Pilotage d'un projet de build puis de refonte pour SG Assurances",
-          "description": "Chef de projets et Scrum Master pour la mise en place de l'Espace Assurances pour les conseillers bancaires (interface unique). Pilotage stratégique (CODIR/COMEX) et coordination du projet en lien avec les équipes Métiers et les équipes Techniques. Encadrement d'une équipe jusqu'à 12 personnes. Animation des comités projets et comités de pilotage / Suivi du planning, des risques, des délais, des coûts et des livrables. Prise en charge de projets satellites annexes liés à l'EAC, pilotage de projets transverses dans un environnement complexe."
+          "description": "Cheffe de projets et Scrum Master pour la mise en place de l'Espace Assurances pour les conseillers bancaires (interface unique). Pilotage stratégique (CODIR/COMEX) et coordination du projet en lien avec les équipes Métiers et les équipes Techniques. Encadrement d'une équipe jusqu'à 12 personnes. Animation des comités projets et comités de pilotage / Suivi du planning, des risques, des délais, des coûts et des livrables. Prise en charge de projets satellites annexes liés à l'EAC, pilotage de projets transverses dans un environnement complexe."
         },
         {
           "name": "Pilotage de projets transverses pour Suez-Lyonnaise des eaux",
-          "description": "Chef de projets transverses et responsable support utilisateur (SAP HR / BW / Workflow ESS). Pilotage montée de version SAP HR, intégration de nouvelles sociétés semi-publiques et privées, mise en place d'une nouvelle grille tarifaire (GPEC). Coordination des différentes équipes (MOE, MOA, TMA). Elaboration des plannings / Suivi des risques, des délais, des coûts, animation des comités. Rédaction des spécifications fonctionnelles suite à l'organisation des ateliers de formalisation des besoins. Supervision de la phase de recette, de la mise en production et participation à la formation des utilisateurs et administrateurs."
+          "description": "Cheffe de projets transverses et responsable support utilisateur (SAP HR / BW / Workflow ESS). Pilotage montée de version SAP HR, intégration de nouvelles sociétés semi-publiques et privées, mise en place d'une nouvelle grille tarifaire (GPEC). Coordination des différentes équipes (MOE, MOA, TMA). Elaboration des plannings / Suivi des risques, des délais, des coûts, animation des comités. Rédaction des spécifications fonctionnelles suite à l'organisation des ateliers de formalisation des besoins. Supervision de la phase de recette, de la mise en production et participation à la formation des utilisateurs et administrateurs."
         },
         {
           "name": "Pilotage du déploiement HR ACCESS pour des organisations publiques",
@@ -463,7 +463,7 @@
         },
         {
           "name": "Pilotage d'un projet de dématérialisation et de projets transverses pour AG2R La Mondiale",
-          "description": "Chef de projet, puis directeur de projet dématérialisation et industrialisation flux entrants groupe (courriers, mails, téléphonies…). Pilotage stratégique du projet : budget, planning, suivi des risques, des délais, des coûts (KPI, reporting…). Coordination multi-métier : logistique (courrier), DSI, MOA, Métier, Gestion, prestataires. Coordination des équipes et animation des comités (COPIL / CODIR / COMEX). Pilotage de projets transverses (convergence du SI retraite, transfert de la chaîne de numérisation)."
+          "description": "Cheffe de projet, puis directeur de projet dématérialisation et industrialisation flux entrants groupe (courriers, mails, téléphonies…). Pilotage stratégique du projet : budget, planning, suivi des risques, des délais, des coûts (KPI, reporting…). Coordination multi-métier : logistique (courrier), DSI, MOA, Métier, Gestion, prestataires. Coordination des équipes et animation des comités (COPIL / CODIR / COMEX). Pilotage de projets transverses (convergence du SI retraite, transfert de la chaîne de numérisation)."
         },
         {
           "name": "Responsable du développement et la mise en place d'un logiciel de gestion de flotte automobile pour My Leasing - Drive in",
@@ -479,26 +479,26 @@
         "Coordination Métiers / MOA / MOE / IT"
       ],
       "document": {
-        "miniDC": "260224_Ludovic_MiniDC.pptx",
-        "image": "homme1.jpg"
+        "miniDC": "",
+        "image": "femme.png"
       },
       "office": {
-        "name": "Brest"
+        "name": "Paris"
       }
     }
   },
   {
     "collaborator": {
       "id": 11,
-      "name": "MOUANDA",
-      "surname": "Jean-Jacques",
+      "name": "O'SULLIVAN",
+      "surname": "Liam",
       "title": "SOFTWARE_ENGINEERING",
       "seniority": "Débutant",
       "isAvailable": true,
       "startAvailability": "2024-01-01",
       "createdAt": "2024-01-01",
       "updatedAt": "2024-01-01",
-      "highlight": "Jean-Jacques est développeur full stack diplômé d'un Master en Génie Logiciel, avec plusieurs expériences dans la conception et le développement d'applications web et scientifiques. Sa polyvalence lui permet d'évoluer aussi bien sur les environnements back-end que front-end, en intégrant des pratiques modernes (agilité, conteneurisation) et des technologies récentes.",
+      "highlight": "Développeur full stack diplômé d'un Master en Génie Logiciel, avec plusieurs expériences dans la conception et le développement d'applications web et scientifiques. Sa polyvalence lui permet d'évoluer aussi bien sur les environnements back-end que front-end, en intégrant des pratiques modernes (agilité, conteneurisation) et des technologies récentes.",
       "experiences": [
         {
           "name": "Développement fullstack pour IFREMER",
@@ -534,8 +534,8 @@
         "Figma"
       ],
       "document": {
-        "miniDC": "260303_Jean-Jacques_MiniDC.pptx",
-        "image": "homme2.png"
+        "miniDC": "",
+        "image": "homme1.jpg"
       },
       "office": {
         "name": "Brest"
@@ -545,15 +545,15 @@
   {
     "collaborator": {
       "id": 12,
-      "name": "DOUDARD",
-      "surname": "Alexandre",
+      "name": "LAMBERT",
+      "surname": "Christophe",
       "title": "MANAGEMENT_AND_DELIVERY",
       "seniority": "Senior",
       "isAvailable": true,
       "startAvailability": "2026-01-01",
       "createdAt": "2024-01-01",
       "updatedAt": "2024-01-01",
-      "highlight": "Avec 25 années d'expérience acquises dans les secteurs IT, assurance et agroalimentaire, Alexandre a pu développer des compétences en gestion de projet notamment dans les phases de coordination, de planification et de gestion de portefeuilles projets ainsi qu'en maîtrise d'ouvrage sur le recueil des besoins, les spécifications, les tests et la formation. Ses capacités d'analyse et de synthèse lui permettent d'intégrer une équipe rapidement et de répondre aux objectifs qui lui sont fixés.",
+      "highlight": "Avec 25 années d'expérience acquises dans les secteurs IT, assurance et agroalimentaire, Christophe a pu développer des compétences en gestion de projet notamment dans les phases de coordination, de planification et de gestion de portefeuilles projets ainsi qu'en maîtrise d'ouvrage sur le recueil des besoins, les spécifications, les tests et la formation. Ses capacités d'analyse et de synthèse lui permettent d'intégrer une équipe rapidement et de répondre aux objectifs qui lui sont fixés.",
       "experiences": [
         {
           "name": "2023-2024 Even",
@@ -600,7 +600,7 @@
         "Rédaction de procédures"
       ],
       "document": {
-        "miniDC": "mini DC - Alexandre.pptx",
+        "miniDC": "",
         "image": "homme2.png"
       },
       "office": {

@@ -42,3 +42,21 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+### Publi sur GitHub Pages
+```sh
+# Dans vite.config.ts : rajouter url que github rajoute automatiquement (nom du repo)
+base: '/neosoft-neobet-poc/' 
+#Ajout github en plus de gitlab
+git remote add github https://github.com/lvirard/neosoft-neobet-poc.git
+#si modif à intégrer : créer une branche dédiée
+git checkout -b gh-pages
+#effectuer puis committer les changements sur cette branche
+#faire de "vue-project" la racine de la branche - bien se placer à la racine du projet
+git subtree split --prefix=vue-project -b deploy-vue
+# checkout vers la branche 
+git checkout deploy-vue
+#push sur la main de github
+git push github deploy-vue:main
+```
