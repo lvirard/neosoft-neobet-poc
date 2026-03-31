@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useDate } from "vuetify";
 import ScrollToTop from "./ScrollToTop.vue";
 import CollaboratorAvatar from "./CollaboratorAvatar.vue";
 import { Collaborator } from "@/types/collaborator";
@@ -12,24 +11,12 @@ const props = defineProps({
     required: true,
   },
 });
-
-const date = useDate();
-const dateFormatted = date.format(props.collaborator.startAvailability, "fullDate");
 </script>
 
 <template>
   <h3>
     <CollaboratorAvatar :collaborator />
   </h3>
-  <span class="text-grey">
-    <v-icon icon="$location"></v-icon> {{ collaborator.office.name }} -
-    {{ collaborator.seniority }}
-    <br />
-    <span v-if="!collaborator.isAvailable">
-      Disponible à partir du {{ dateFormatted }}
-    </span>
-    <span v-else>Disponible immédiatement</span>
-  </span>
 
   <CollaboratorSkills :collaborator />
 

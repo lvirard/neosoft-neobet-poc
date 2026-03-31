@@ -64,6 +64,11 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
     });
   });
 
+  const getNumberOfAvailableCollaborators = computed(() => {
+    return filteredCollaborators.value.filter((e) => e.isAvailable === true)
+      .length;
+  });
+
   function setFilter<K extends keyof Filters>(key: K, value: Filters[K]) {
     filters.value[key] = value;
   }
@@ -94,6 +99,7 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
     allCollaborators,
     filters,
     filteredCollaborators,
+    getNumberOfAvailableCollaborators,
     setFilter,
     resetFilters,
     favoriteCollaborators,

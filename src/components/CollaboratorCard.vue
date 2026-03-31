@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { computed, PropType } from "vue";
-import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import { Collaborator } from "@/types/collaborator";
 import CollaboratorAvatar from "@/components/CollaboratorAvatar.vue";
 import CollaboratorSkills from "./CollaboratorSkills.vue";
 import { useCollaboratorNavigation } from "@/composables/useCollaboratorNavigation";
-import { useCollaboratorDate } from "@/composables/useCollaboratorDate";
 
 const props = defineProps({
   collaborator: {
@@ -14,28 +12,8 @@ const props = defineProps({
   },
 });
 
-const collaboratorStore = useCollaboratorStore();
 const { getCollaboratorDetailRoute, goToCollaboratorDetail } =
   useCollaboratorNavigation();
-
-const { formatAvailabilityDate } = useCollaboratorDate();
-const dateFormatted = formatAvailabilityDate(
-  props.collaborator.startAvailability,
-);
-
-const isStarred = computed(() =>
-  collaboratorStore.favoriteCollaborators.some(
-    (c) => c.id === props.collaborator.id,
-  ),
-);
-
-function toggleStar() {
-  if (isStarred.value) {
-    collaboratorStore.removeFromFavorites(props.collaborator);
-  } else {
-    collaboratorStore.addToFavorites(props.collaborator);
-  }
-}
 
 function goToDetail() {
   goToCollaboratorDetail(props.collaborator);
@@ -49,21 +27,9 @@ function goToDetail() {
     :to="getCollaboratorDetailRoute(collaborator)"
   >
     <v-card-title>
-      <CollaboratorAvatar :collaborator="collaborator" :to="getCollaboratorDetailRoute(collaborator)"/>
-      <v-btn icon="" variant="text" @click.prevent="toggleStar">
-        <v-icon :icon="isStarred ? '$star' : '$starOutline'" />
-      </v-btn>
+      <CollaboratorAvatar :collaborator="collaborator" />
     </v-card-title>
     <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
-
-    <v-card-subtitle>
-      <v-icon icon="$location"></v-icon>
-      {{ collaborator.office.name }} -
-      <span v-if="!collaborator.isAvailable">
-        Disponible à partir du {{ dateFormatted }}
-      </span>
-      <span v-else>Disponible immédiatement</span>
-    </v-card-subtitle>
 
     <v-card-item>
       <CollaboratorSkills :collaborator :skills-number="3" />
