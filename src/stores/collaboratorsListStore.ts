@@ -46,13 +46,14 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
       const matchSeniority =
         !filters.value.seniority || p.seniority === filters.value.seniority;
 
-      const matchAvailability =
-        !filters.value.availability ||
-        (filters.value.availability === "immediate" &&
-          p.availability === "immediate") ||
-        (filters.value.availability === "soon" &&
-          ["immediate", "soon"].includes(p.availability));
+      function availabilityMatches(filter: string, value: string): boolean {
+        if (filter === "immediate") return value === "immediate";
+        if (filter === "soon") return ["immediate", "soon"].includes(value);
+        return false;
+      }
 
+      const matchAvailability =
+        !filters.value.availability || availabilityMatches(filters.value.availability, p.availability);
 
       return (
         matchSearch &&
