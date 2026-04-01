@@ -10,7 +10,9 @@ onMounted(() => {
 
 <template>
   <div class="home-page pa-6 mx-auto">
-    <h1 class="mb-6 title-search">Trouvez le bon consultant pour réaliser vos projets !</h1>
+    <h1 class="mb-6 title-search">
+      Trouvez le bon consultant pour réaliser vos projets !
+    </h1>
     <CollaboratorFilters />
   </div>
 </template>
@@ -23,5 +25,4 @@ onMounted(() => {
 .home-page {
   max-width: 600px;
 }
-
 </style>

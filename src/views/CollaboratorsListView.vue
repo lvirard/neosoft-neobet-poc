@@ -7,22 +7,19 @@ import { ref } from "vue";
 
 const menu = ref(false);
 const store = useCollaboratorStore();
-
 </script>
 
 <template>
   <v-row>
     <v-col cols="9">
-      <p>
-        {{ store.getNumberOfAvailableCollaborators }} consultants trouvés
-      </p>
+      <p>{{ store.getNumberOfAvailableCollaborators }} consultants trouvés</p>
     </v-col>
     <v-col class="d-flex justify-end">
       <v-menu v-model="menu" :close-on-content-click="false" width="320">
         <template v-slot:activator="{ props }">
           <v-btn icon="$filter" variant="plain" v-bind="props"></v-btn>
         </template>
-        <CollaboratorFilters @search="menu = false"/>
+        <CollaboratorFilters @search="menu = false" />
       </v-menu>
     </v-col>
   </v-row>

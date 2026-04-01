@@ -1,5 +1,4 @@
 export function useCollaboratorDate() {
-
   function getMonthsToAvailability(
     startAvailabilityDate: string | number | Date | undefined,
   ) {

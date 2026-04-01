@@ -9,7 +9,6 @@ const drawer = ref(false);
 //todo: à remplacer par système d'auth dès qu'il est en place
 const isLoggedIn = ref(true);
 const navigationItems = computed(() => getNavigationItems(isLoggedIn.value));
-
 </script>
 
 <template>
@@ -26,7 +25,12 @@ const navigationItems = computed(() => getNavigationItems(isLoggedIn.value));
 
     <!-- Desktop categories -->
     <div class="d-none d-lg-flex align-center ga-4 nav-items">
-      <router-link v-for="item in navigationItems" :key="item.title" :to="item.to" class="d-flex align-center ga-2 text-white">
+      <router-link
+        v-for="item in navigationItems"
+        :key="item.title"
+        :to="item.to"
+        class="d-flex align-center ga-2 text-white"
+      >
         <v-icon :icon="item.icon" />
         <span>{{ item.title }}</span>
       </router-link>
@@ -41,7 +45,6 @@ const navigationItems = computed(() => getNavigationItems(isLoggedIn.value));
 </template>
 
 <style scoped>
-
 .banner {
   color: white;
   background-color: var(--neo-dark-blue);
@@ -61,7 +64,7 @@ const navigationItems = computed(() => getNavigationItems(isLoggedIn.value));
   font-size: 0.9rem;
 }
 
- /* Desktop */
+/* Desktop */
 @media (min-width: 768px) {
   .title-text {
     margin-left: 1rem;

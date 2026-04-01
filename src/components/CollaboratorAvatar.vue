@@ -17,7 +17,9 @@ const props = defineProps({
 
 const hasImage = computed(() => !!props.collaborator.document?.image);
 const imageUrl = computed(() =>
-  hasImage.value ? `${import.meta.env.BASE_URL}img/${props.collaborator.document.image}` : "",
+  hasImage.value
+    ? `${import.meta.env.BASE_URL}img/${props.collaborator.document.image}`
+    : "",
 );
 const initials = computed(() => {
   const { name, surname } = props.collaborator;
@@ -73,24 +75,24 @@ function toggleStar() {
           variant="outlined"
           class="chip"
           color="orange"
-          v-if="collaborator.availability === 'soon' "
+          v-if="collaborator.availability === 'soon'"
         >
           Bientôt disponible
         </v-chip>
-        <v-chip 
+        <v-chip
           size="small"
-          variant="outlined" 
+          variant="outlined"
           class="chip"
-          color="success" 
+          color="success"
           v-else-if="collaborator.availability === 'immediate'"
         >
           Disponible
         </v-chip>
-        <v-chip 
+        <v-chip
           size="small"
-          variant="outlined" 
+          variant="outlined"
           class="chip"
-          color="error" 
+          color="error"
           v-else
         >
           Indisponible
@@ -98,11 +100,7 @@ function toggleStar() {
       </div>
     </v-col>
     <v-col cols="1" class="d-flex justify-end align-self-start">
-      <v-btn
-        variant="text"
-        @click.prevent="toggleStar"
-        class="like" 
-      >
+      <v-btn variant="text" @click.prevent="toggleStar" class="like">
         <v-icon :icon="isStarred ? '$heart' : '$heartOutline'" />
       </v-btn>
     </v-col>
@@ -110,7 +108,6 @@ function toggleStar() {
 </template>
 
 <style>
-
 .avatar {
   font-weight: 600;
   font-size: 16px;
@@ -149,5 +146,4 @@ function toggleStar() {
   min-width: 0;
   padding: 0;
 }
-
 </style>

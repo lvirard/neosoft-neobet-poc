@@ -16,10 +16,11 @@ const close = () => emit("update:modelValue", false);
 </script>
 
 <template>
-  <v-navigation-drawer 
-        :model-value="modelValue"
-        @update:model-value="emit('update:modelValue', $event)"
-        temporary>
+  <v-navigation-drawer
+    :model-value="modelValue"
+    @update:model-value="emit('update:modelValue', $event)"
+    temporary
+  >
     <v-list>
       <v-list-item
         v-for="item in navigationItems"
@@ -28,10 +29,10 @@ const close = () => emit("update:modelValue", false);
         link
       >
         <template #prepend>
-            <v-icon :icon="item.icon" />
+          <v-icon :icon="item.icon" />
         </template>
         <v-list-item-title>
-            {{ item.title }}
+          {{ item.title }}
         </v-list-item-title>
       </v-list-item>
     </v-list>

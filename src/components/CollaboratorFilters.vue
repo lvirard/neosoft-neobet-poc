@@ -5,7 +5,7 @@ import { JobRepository } from "@/types/JobRepository";
 import {
   seniorityOptions,
   titleOptions,
-  availabilityOptions
+  availabilityOptions,
 } from "@/data/filterOptions";
 
 const router = useRouter();
@@ -20,8 +20,6 @@ const store = useCollaboratorStore();
 function onTitleChange(value: string | null) {
   store.setFilter("title", value as JobRepository | undefined);
 }
-
-
 </script>
 
 <template>
@@ -101,7 +99,7 @@ function onTitleChange(value: string | null) {
         </v-btn>
       </div>
     </v-card>
-  
+
     <div class="d-flex justify-center">
       <v-btn
         prepend-icon="$magnify"
@@ -119,7 +117,7 @@ function onTitleChange(value: string | null) {
 <style>
 .search-card {
   border-radius: 24px;
-  background-color: var(--color-background-soft); 
+  background-color: var(--color-background-soft);
   min-width: 220px;
 }
 
