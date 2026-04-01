@@ -23,7 +23,6 @@ const skills =
 
 <template>
   <div class="mt-4">
-    <p>Compétences :</p>
     <v-chip
       v-for="skill in skills"
       :skill

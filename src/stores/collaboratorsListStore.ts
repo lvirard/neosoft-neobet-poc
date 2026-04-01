@@ -53,7 +53,8 @@ export const useCollaboratorStore = defineStore("collaborator", () => {
       }
 
       const matchAvailability =
-        !filters.value.availability || availabilityMatches(filters.value.availability, p.availability);
+        !filters.value.availability ||
+        availabilityMatches(filters.value.availability, p.availability);
 
       return (
         matchSearch &&

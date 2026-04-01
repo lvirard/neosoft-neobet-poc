@@ -4,6 +4,7 @@ import { Collaborator } from "@/types/collaborator";
 import CollaboratorAvatar from "@/components/CollaboratorAvatar.vue";
 import CollaboratorSkills from "./CollaboratorSkills.vue";
 import { useCollaboratorNavigation } from "@/composables/useCollaboratorNavigation";
+import CollaboratorJobTitle from "./CollaboratorJobTitle.vue";
 
 const props = defineProps({
   collaborator: {
@@ -12,8 +13,7 @@ const props = defineProps({
   },
 });
 
-const { getCollaboratorDetailRoute } =
-  useCollaboratorNavigation();
+const { getCollaboratorDetailRoute } = useCollaboratorNavigation();
 </script>
 
 <template>
@@ -25,16 +25,14 @@ const { getCollaboratorDetailRoute } =
     <v-card-title>
       <CollaboratorAvatar :collaborator="collaborator" />
     </v-card-title>
-    <v-card-subtitle>{{ collaborator.title }}</v-card-subtitle>
-
     <v-card-item>
+      <CollaboratorJobTitle :job-title="collaborator.jobTitle" />
       <CollaboratorSkills :collaborator :skills-number="3" />
     </v-card-item>
   </v-card>
 </template>
 
 <style>
-
 .collaborator-card {
   display: flex;
   flex-direction: column;

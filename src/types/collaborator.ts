@@ -5,6 +5,7 @@ export class Collaborator {
   name: string;
   surname: string;
   title: string;
+  jobTitle: string;
   seniority: string;
   availability: string;
   startAvailability: string;
@@ -21,6 +22,7 @@ export class Collaborator {
     name: string,
     surname: string,
     title: string,
+    jobTitle: string,
     seniority: string,
     availability: string,
     startAvailability: string,
@@ -36,6 +38,7 @@ export class Collaborator {
     this.name = name;
     this.surname = surname;
     this.title = title;
+    this.jobTitle = jobTitle;
     this.seniority = seniority;
     this.availability = availability;
     this.startAvailability = startAvailability;
