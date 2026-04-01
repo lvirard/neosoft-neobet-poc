@@ -1,5 +1,6 @@
 // plugins/vuetify.ts
 import 'vuetify/styles';
+import { fr } from 'vuetify/locale';
 import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 import { mdiHandshake, mdiClose, mdiChevronDown, mdiChevronUp, mdiAccountCircle, mdiMagnify, mdiChevronRight, mdiMapMarker, mdiStar, mdiStarOutline, mdiCheck, mdiPhone, mdiCalendarCheck, mdiCalendarRemove, mdiEyeOff, mdiLock, mdiEye, mdiEmail, mdiDelete, mdiFilterOutline, mdiMenu, mdiHeart, mdiHeartOutline, mdiLogin, mdiLogout,mdiAccountPlus, mdiBriefcaseOutline, mdiTrendingUp } from '@mdi/js';
@@ -13,6 +14,7 @@ export default createVuetify({
     },
     locale: {
         locale: 'fr',
+        messages: { fr },
         fallback: 'en',
     },
     date: {

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CollaboratorCard from "@/components/CollaboratorCard.vue";
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
+import ScrollToTop from "@/components/ScrollToTop.vue";
 
 const store = useCollaboratorStore();
 </script>

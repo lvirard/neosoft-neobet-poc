@@ -47,7 +47,7 @@ function toggleStar() {
 </script>
 
 <template>
-  <v-row align="center" no-gutters>
+  <v-row align="center" density="compact">
     <v-col cols="3" class="d-flex justify-center">
       <v-avatar :color="'var(--neo-dark-blue)'" :size="size" class="avatar">
         <v-img v-if="hasImage" :src="imageUrl" />
