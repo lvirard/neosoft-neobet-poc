@@ -12,12 +12,8 @@ const props = defineProps({
   },
 });
 
-const { getCollaboratorDetailRoute, goToCollaboratorDetail } =
+const { getCollaboratorDetailRoute } =
   useCollaboratorNavigation();
-
-// function goToDetail() {
-//   goToCollaboratorDetail(props.collaborator);
-// }
 </script>
 
 <template>
@@ -34,18 +30,6 @@ const { getCollaboratorDetailRoute, goToCollaboratorDetail } =
     <v-card-item>
       <CollaboratorSkills :collaborator :skills-number="3" />
     </v-card-item>
-
-    <!-- <v-card-actions class="card-footer justify-center">
-      <v-btn
-        variant="flat"
-        rounded="xl"
-        class="text-white w-100"
-        @click="goToDetail"
-      >
-        <template v-slot:prepend><v-icon icon="$magnify"></v-icon> </template>
-        Voir plus
-      </v-btn>
-    </v-card-actions> -->
   </v-card>
 </template>
 

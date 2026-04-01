@@ -36,7 +36,7 @@ const props = defineProps({
   </v-list-item>
   <v-btn @click="$router.back()" block>Retour</v-btn>
   <v-fab app prepend-icon="$phone" class="mb-16">
-    <a class="text-white text-decoration-none" href="tel:0647237948">
+    <a class="text-white text-decoration-none" href="tel:0101010101">
       Contacter le commercial
     </a>
   </v-fab>
