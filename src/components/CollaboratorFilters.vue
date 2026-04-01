@@ -10,15 +10,19 @@ import {
 } from "@/data/filterOptions";
 
 const router = useRouter();
+const emit = defineEmits(["search"]);
 
 function handleSearch() {
   router.push({ name: "collaboratorsList" });
+  emit("search");
 }
 const store = useCollaboratorStore();
 
 function onTitleChange(value: string | null) {
   store.setFilter("title", value as JobRepository | undefined);
 }
+
+
 </script>
 
 <template>
@@ -127,7 +131,7 @@ function onTitleChange(value: string | null) {
 <style>
 .search-card {
   border-radius: 24px;
-  background-color: var(--vt-c-white-soft); 
+  background-color: var(--color-background-soft); 
   min-width: 220px;
 }
 

@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import CollaboratorFilters from "@/components/CollaboratorFilters.vue";
 import { onMounted } from "vue";
-import { useRouter } from "vue-router";
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
-const router = useRouter();
 
-function handleSearch() {
-  router.push({ name: "collaboratorsList" });
-}
 onMounted(() => {
   useCollaboratorStore().resetFilters();
 });

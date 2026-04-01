@@ -1,6 +1,5 @@
 export const getNavigationItems = (isLoggedIn: boolean) => {
-  return [
-    ...(isLoggedIn
+  return (isLoggedIn
       ? [
             { title: "Mon compte", to: { name: "account" }, icon: "$account" },
             { title: "Mes favoris", to: { name: "favorites" }, icon: "$heartOutline" },
@@ -9,7 +8,6 @@ export const getNavigationItems = (isLoggedIn: boolean) => {
       : [
             { title: "Se connecter", to: { name: "login" }, icon: "$login" },
             { title: "S'enregistrer", to: { name: "register" }, icon: "$register" },
-      ]),
-  ];
+      ]);
 };
 

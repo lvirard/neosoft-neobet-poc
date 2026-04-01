@@ -18,11 +18,11 @@ const store = useCollaboratorStore();
       </p>
     </v-col>
     <v-col class="d-flex justify-end">
-      <v-menu v-model="menu" :close-on-content-click="false">
+      <v-menu v-model="menu" :close-on-content-click="false" width="320">
         <template v-slot:activator="{ props }">
           <v-btn icon="$filter" variant="plain" v-bind="props"></v-btn>
         </template>
-        <CollaboratorFilters />
+        <CollaboratorFilters @search="menu = false"/>
       </v-menu>
     </v-col>
   </v-row>

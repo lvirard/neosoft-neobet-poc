@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, PropType } from "vue";
+import { PropType } from "vue";
 import { Collaborator } from "@/types/collaborator";
 import CollaboratorAvatar from "@/components/CollaboratorAvatar.vue";
 import CollaboratorSkills from "./CollaboratorSkills.vue";
@@ -15,9 +15,9 @@ const props = defineProps({
 const { getCollaboratorDetailRoute, goToCollaboratorDetail } =
   useCollaboratorNavigation();
 
-function goToDetail() {
-  goToCollaboratorDetail(props.collaborator);
-}
+// function goToDetail() {
+//   goToCollaboratorDetail(props.collaborator);
+// }
 </script>
 
 <template>
@@ -35,7 +35,7 @@ function goToDetail() {
       <CollaboratorSkills :collaborator :skills-number="3" />
     </v-card-item>
 
-    <v-card-actions class="card-footer justify-center">
+    <!-- <v-card-actions class="card-footer justify-center">
       <v-btn
         variant="flat"
         rounded="xl"
@@ -45,33 +45,16 @@ function goToDetail() {
         <template v-slot:prepend><v-icon icon="$magnify"></v-icon> </template>
         Voir plus
       </v-btn>
-    </v-card-actions>
+    </v-card-actions> -->
   </v-card>
 </template>
 
 <style>
-.title-font {
-  font-family: "Chillax Bold", "Arial", sans-serif;
-}
 
-.card {
-  background: var(--neo-dark-blue);
-  border-radius: 16px;
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 2.4rem 1.2rem;
-}
-
-.actions {
-  color: var(--neo-dark-blue);
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
 .collaborator-card {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .collaborator-card .v-card-text.card-content {

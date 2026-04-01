@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, PropType } from "vue";
 import { Collaborator } from "@/types/collaborator";
-import { useCollaboratorDate } from "@/composables/useCollaboratorDate";
+// import { useCollaboratorDate } from "@/composables/useCollaboratorDate";
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 
 const props = defineProps({
@@ -24,10 +24,10 @@ const initials = computed(() => {
   return `${name?.[0] ?? ""}${surname?.[0] ?? ""}`.toUpperCase();
 });
 
-const { getMonthsToAvailability } = useCollaboratorDate();
-const dateFormatted = getMonthsToAvailability(
-  props.collaborator.startAvailability,
-);
+// const { getMonthsToAvailability } = useCollaboratorDate();
+// const dateFormatted = getMonthsToAvailability(
+//   props.collaborator.startAvailability,
+// );
 
 const collaboratorStore = useCollaboratorStore();
 
@@ -101,6 +101,7 @@ function toggleStar() {
       <v-btn
         variant="text"
         @click.prevent="toggleStar"
+        class="like" 
       >
         <v-icon :icon="isStarred ? '$heart' : '$heartOutline'" />
       </v-btn>
@@ -144,6 +145,9 @@ function toggleStar() {
   margin-top: 4px;
 }
 
-
+.like {
+  min-width: 0;
+  padding: 0;
+}
 
 </style>
