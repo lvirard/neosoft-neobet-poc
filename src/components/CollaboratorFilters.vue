@@ -3,7 +3,6 @@ import { useRouter } from "vue-router";
 import { useCollaboratorStore } from "@/stores/collaboratorsListStore";
 import { JobRepository } from "@/types/JobRepository";
 import {
-  //officeOptions,
   seniorityOptions,
   titleOptions,
   availabilityOptions
@@ -28,17 +27,6 @@ function onTitleChange(value: string | null) {
 <template>
   <div class="search-wrapper">
     <v-card class="search-card pa-4 mb-4">
-      <!-- <v-row align="center" density="comfortable" justify="space-between">
-        <v-select
-          :model-value="store.filters.office"
-          @update:model-value="store.setFilter('office', $event)"
-          :items="officeOptions"
-          label="Secteur géographique"
-          clearable
-          density="comfortable"
-          hide-details
-        />
-      </v-row> -->
       <div class="d-flex flex-column ga-6">
         <v-select
           :model-value="store.filters.title"
