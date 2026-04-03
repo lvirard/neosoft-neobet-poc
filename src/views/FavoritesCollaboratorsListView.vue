@@ -9,11 +9,9 @@ const store = useCollaboratorStore();
 <template>
   <h1 class="text-center mb-6">Mes favoris :</h1>
   <v-row>
-    <span v-if="store.favoriteCollaborators.length === 0">
+    <span v-if="store.favoriteCollaborators.length === 0" class="ma-auto">
       Vous n'avez encore aucun consultant favori.
-      <v-btn href="mailto:commercial@neosoft.fr" block class="mt-4"
-        >Discutons-en</v-btn
-      >
+      <v-btn href="mailto:commercial@neosoft.fr" block class="mt-4">Discutons-en</v-btn>
     </span>
     <v-col
       v-for="collaborator in store.favoriteCollaborators"
