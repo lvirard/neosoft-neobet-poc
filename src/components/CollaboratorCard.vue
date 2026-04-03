@@ -6,7 +6,7 @@ import CollaboratorSkills from "./CollaboratorSkills.vue";
 import { useCollaboratorNavigation } from "@/composables/useCollaboratorNavigation";
 import CollaboratorJobTitle from "./CollaboratorJobTitle.vue";
 
-const props = defineProps({
+defineProps({
   collaborator: {
     type: Object as PropType<Collaborator>,
     required: true,

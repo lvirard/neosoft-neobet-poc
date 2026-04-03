@@ -6,7 +6,7 @@ import { PropType } from "vue";
 import CollaboratorSkills from "./CollaboratorSkills.vue";
 import CollaboratorJobTitle from "./CollaboratorJobTitle.vue";
 
-const props = defineProps({
+defineProps({
   collaborator: {
     type: Object as PropType<Collaborator>,
     required: true,
@@ -15,17 +15,23 @@ const props = defineProps({
 </script>
 
 <template>
-  <v-btn prepend-icon="$arrowLeft" @click="$router.back()" variant="text">Retour</v-btn>
+  <v-btn prepend-icon="$arrowLeft" @click="$router.back()" variant="text"
+    >Retour</v-btn
+  >
 
   <h3>
     <CollaboratorAvatar :collaborator />
   </h3>
 
-  <CollaboratorJobTitle :jobTitle="collaborator.jobTitle"/>
+  <CollaboratorJobTitle :jobTitle="collaborator.jobTitle" />
 
   <CollaboratorSkills :collaborator />
 
-  <v-btn class="text-white text-decoration-none mt-8" href="mailto:commercial@neosoft.fr" block>
+  <v-btn
+    class="text-white text-decoration-none mt-8"
+    href="mailto:commercial@neosoft.fr"
+    block
+  >
     Contacter Néosoft
   </v-btn>
 

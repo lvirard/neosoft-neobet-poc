@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 import { getNavigationItems } from "@/data/navigation";
 
-const props = defineProps<{
+defineProps<{
   modelValue: boolean;
 }>();
 
@@ -11,8 +11,6 @@ const emit = defineEmits(["update:modelValue"]);
 //todo: à remplacer par système d'auth dès qu'il est en place
 const isLoggedIn = ref(true);
 const navigationItems = computed(() => getNavigationItems(isLoggedIn.value));
-
-const close = () => emit("update:modelValue", false);
 </script>
 
 <template>

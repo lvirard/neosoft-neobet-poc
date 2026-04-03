@@ -44,7 +44,9 @@ function toggleStar() {
     <div class="my-auto">
       <v-avatar :color="'var(--neo-dark-blue)'" :size="size" class="avatar">
         <v-img v-if="hasImage" :src="imageUrl" />
-        <span v-else class="text-headline-small text-white">{{ initials }}</span>
+        <span v-else class="text-headline-small text-white">
+          {{ initials }}
+        </span>
       </v-avatar>
     </div>
     <div class="ma-2 me-auto">
