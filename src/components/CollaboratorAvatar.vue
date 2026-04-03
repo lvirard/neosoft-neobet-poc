@@ -17,26 +17,17 @@ const props = defineProps({
 
 const hasImage = computed(() => !!props.collaborator.document?.image);
 const imageUrl = computed(() =>
-  hasImage.value
-    ? `${import.meta.env.BASE_URL}img/${props.collaborator.document.image}`
-    : "",
+  hasImage.value ? `${import.meta.env.BASE_URL}img/${props.collaborator.document.image}` : ""
 );
 const initials = computed(() => {
   const { name, surname } = props.collaborator;
   return `${name?.[0] ?? ""}${surname?.[0] ?? ""}`.toUpperCase();
 });
 
-// const { getMonthsToAvailability } = useCollaboratorDate();
-// const dateFormatted = getMonthsToAvailability(
-//   props.collaborator.startAvailability,
-// );
-
 const collaboratorStore = useCollaboratorStore();
 
 const isStarred = computed(() =>
-  collaboratorStore.favoriteCollaborators.some(
-    (c) => c.id === props.collaborator.id,
-  ),
+  collaboratorStore.favoriteCollaborators.some((c) => c.id === props.collaborator.id)
 );
 
 function toggleStar() {
@@ -49,17 +40,14 @@ function toggleStar() {
 </script>
 
 <template>
-  <v-row align="center" density="compact">
-    <v-col cols="3" class="d-flex justify-center">
+  <div class="d-flex">
+    <div class="my-auto">
       <v-avatar :color="'var(--neo-dark-blue)'" :size="size" class="avatar">
         <v-img v-if="hasImage" :src="imageUrl" />
-        <span v-else class="text-headline-small text-white">{{
-          initials
-        }}</span>
+        <span v-else class="text-headline-small text-white">{{ initials }}</span>
       </v-avatar>
-    </v-col>
-
-    <v-col cols="8" class="d-flex flex-column justify-center">
+    </div>
+    <div class="ma-2 me-auto">
       <div class="name">
         {{ collaborator.surname }}
       </div>
@@ -88,23 +76,18 @@ function toggleStar() {
         >
           Disponible
         </v-chip>
-        <v-chip
-          size="small"
-          variant="outlined"
-          class="chip"
-          color="error"
-          v-else
-        >
+        <v-chip size="small" variant="outlined" class="chip" color="error" v-else>
           Indisponible
         </v-chip>
       </div>
-    </v-col>
-    <v-col cols="1" class="d-flex justify-end align-self-start">
+    </div>
+
+    <div class="ma-2 pa-2">
       <v-btn variant="text" @click.prevent="toggleStar" class="like">
         <v-icon :icon="isStarred ? '$heart' : '$heartOutline'" />
       </v-btn>
-    </v-col>
-  </v-row>
+    </div>
+  </div>
 </template>
 
 <style>
