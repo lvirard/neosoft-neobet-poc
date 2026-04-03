@@ -17,7 +17,9 @@ const props = defineProps({
 
 const hasImage = computed(() => !!props.collaborator.document?.image);
 const imageUrl = computed(() =>
-  hasImage.value ? `${import.meta.env.BASE_URL}img/${props.collaborator.document.image}` : ""
+  hasImage.value
+    ? `${import.meta.env.BASE_URL}img/${props.collaborator.document.image}`
+    : "",
 );
 const initials = computed(() => {
   const { name, surname } = props.collaborator;
@@ -27,7 +29,9 @@ const initials = computed(() => {
 const collaboratorStore = useCollaboratorStore();
 
 const isStarred = computed(() =>
-  collaboratorStore.favoriteCollaborators.some((c) => c.id === props.collaborator.id)
+  collaboratorStore.favoriteCollaborators.some(
+    (c) => c.id === props.collaborator.id,
+  ),
 );
 
 function toggleStar() {
@@ -78,7 +82,13 @@ function toggleStar() {
         >
           Disponible
         </v-chip>
-        <v-chip size="small" variant="outlined" class="chip" color="error" v-else>
+        <v-chip
+          size="small"
+          variant="outlined"
+          class="chip"
+          color="error"
+          v-else
+        >
           Indisponible
         </v-chip>
       </div>
