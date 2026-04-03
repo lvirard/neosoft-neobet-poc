@@ -11,7 +11,9 @@ const store = useCollaboratorStore();
   <v-row>
     <span v-if="store.favoriteCollaborators.length === 0">
       Vous n'avez encore aucun consultant favori.
-      <v-btn href="tel:0101010101" block class="mt-4">Discutons-en</v-btn>
+      <v-btn href="mailto:commercial@neosoft.fr" block class="mt-4"
+        >Discutons-en</v-btn
+      >
     </span>
     <v-col
       v-for="collaborator in store.favoriteCollaborators"
